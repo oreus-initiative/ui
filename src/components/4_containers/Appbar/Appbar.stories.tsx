@@ -1,17 +1,17 @@
 import React from "react";
 
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { Appbar, AppbarProps } from './Appbar';
 
 const meta: Meta = {
-    title: 'Inputs/Button',
-    component: Button
+    title: 'Containers/Appbar',
+    component: Appbar
 }
 
 export default meta;
 
 
-const Template: Story<ButtonProps> = (args) => <Button {...args}/>;
+const Template: Story<AppbarProps> = (args) => <Appbar {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {};

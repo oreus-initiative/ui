@@ -1,17 +1,17 @@
 import React from "react";
 
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { Stepper, StepperProps } from './Stepper';
 
 const meta: Meta = {
-    title: 'Inputs/Button',
-    component: Button
+    title: 'Navigation/Stepper',
+    component: Stepper
 }
 
 export default meta;
 
 
-const Template: Story<ButtonProps> = (args) => <Button {...args}/>;
+const Template: Story<StepperProps> = (args) => <Stepper {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {};

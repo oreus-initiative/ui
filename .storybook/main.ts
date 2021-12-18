@@ -3,7 +3,7 @@ import type { StorybookConfig } from '@storybook/react/types';
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.stories.mdx",
-    "../src/components/0_welcome/**/**/*.stories.@(js|jsx|ts|tsx)",
+    // "../src/components/0_welcome/**/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/1_inputs/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/2_display/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/3_feedback/**/*.stories.@(js|jsx|ts|tsx)",
