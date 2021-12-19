@@ -1,0 +1,98 @@
+@import "src/styles/_mixins.scss";
+
+.o_btn {
+    border: 0;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: bold;
+    background-color: unset;
+    @include transition(color);
+    @include transition(background-color);
+    @include transition(border);
+    @include transition(opacity);
+    display: inline-block;
+    width: fit-content;
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &.o_btn_block {
+        display: block;
+        width: 100%;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+
+    @mixin o_btn_contained($main, $dark) {
+        border: 3px solid $main;
+        background-color: $main;
+        color: set-color($main);
+        &:not(:disabled):hover {
+            border: 3px solid $dark;
+            background-color: $dark;
+            color: set-color($dark);
+        }
+    }
+
+    @mixin o_btn_outlined($main, $dark) {
+        border: 3px solid $main;
+        color: $main;
+        &:hover {
+            border: 3px solid $dark;
+            color: $dark;
+        }
+    }
+
+    @mixin o_btn_text($main, $dark) {
+        border: 3px solid transparent;
+        color: $main;
+        &:hover {
+            color: $dark;
+        }
+    }
+
+    &.o_btn_contained_primary {@include o_btn_contained($primary_1, $primary_0);}
+    &.o_btn_outlined_primary {@include o_btn_outlined($primary_1, $primary_0);}
+    &.o_btn_text_primary {@include o_btn_text($primary_1, $primary_0);}
+
+    &.o_btn_contained_light {@include o_btn_contained($gray_4, $gray_3);}
+    &.o_btn_outlined_light {@include o_btn_outlined($gray_4, $gray_3);}
+    &.o_btn_text_light {@include o_btn_text($gray_4, $gray_3);}
+
+    &.o_btn_contained_success {@include o_btn_contained($secondary_1, $secondary_0);}
+    &.o_btn_outlined_success {@include o_btn_outlined($secondary_1, $secondary_0);}
+    &.o_btn_text_success {@include o_btn_text($secondary_1, $secondary_0);}
+
+    &.o_btn_contained_warning {@include o_btn_contained($warning_1, $warning_0);}
+    &.o_btn_outlined_warning {@include o_btn_outlined($warning_1, $warning_0);}
+    &.o_btn_text_warning {@include o_btn_text($warning_1, $warning_0);}
+
+    &.o_btn_contained_danger {@include o_btn_contained($danger_1, $danger_0);}
+    &.o_btn_outlined_danger {@include o_btn_outlined($danger_1, $danger_0);}
+    &.o_btn_text_danger {@include o_btn_text($danger_1, $danger_0);}
+
+    &.o_btn_xs {
+        padding: $spacing_0 $spacing_2;
+        font-size: $text_size_0;
+    }
+    &.o_btn_sm {
+        padding: $spacing_0 $spacing_2;
+        font-size: $text_size_1;
+    }
+    &.o_btn_md {
+        padding: $spacing_1 $spacing_3;
+        font-size: $text_size_2;
+    }
+    &.o_btn_lg {
+        padding: $spacing_2 $spacing_4;
+        font-size: $text_size_3;
+    }
+    &.o_btn_xl {
+        padding: $spacing_3 $spacing_5;
+        font-size: $text_size_4;
+    }
+}

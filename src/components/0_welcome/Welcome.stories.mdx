@@ -1,0 +1,66 @@
+import { Meta, Canvas } from '@storybook/addon-docs';
+
+import { Button } from "../1_inputs/Button/Button";
+
+<Meta title="Welcome/Home" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+
+# Oreus's UI Library
+
+This isolated components library was built by Oreus to be used in various web application projects.
+In this page, we'll help you get started with the library.
+
+## Installation
+
+The UI library is available as an NPM package, so the installation is pretty simple.
+Simply run the following command;
+
+`npm install @oreus/ui`
+
+To use your first component, simply import it from the package as such;
+
+```javascript
+import Button from '@oreus/ui';
+
+function App() {
+    return <Button onClick={() => console.log('Button clicked !')}>Click me !</Button>
+}
+```
+
+Which should result in;
+
+<Canvas>
+  {/* <Button onClick={() => console.log('Button clicked !')}>Click me !</Button> */}
+</Canvas>
+
+## Roadmap
+
+We're targetting the end of January for an initial release of the UI library. That 1.0.0 version
+will include all components, but no test. The following weeks will be dedicated to testing every
+component.
+
+After that, components will be added as they are needed in our projects or per other contributions.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire,
+and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull
+request. You can also simply open an issue with the tag "enhancement". Don't forget to give the
+project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Licenses
+
+Distributed under the GNUv3 License. See `LICENSE` for more information.
+
+## Contact
+
+Dominic Fournier - [@DominicF96](https://twitter.com/DominicF96) - me@dominicfournier.com
+
+Project Link: [https://github.com/oreus-initiative/ui](https://github.com/oreus-initiative/ui)

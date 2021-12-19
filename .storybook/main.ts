@@ -3,7 +3,7 @@ import type { StorybookConfig } from '@storybook/react/types';
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.stories.mdx",
-    // "../src/components/0_welcome/**/**/*.stories.@(js|jsx|ts|tsx)",
+    "../src/components/0_welcome/*.stories.mdx",
     "../src/components/1_inputs/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/2_display/**/*.stories.@(js|jsx|ts|tsx)",
     "../src/components/3_feedback/**/*.stories.@(js|jsx|ts|tsx)",
@@ -20,6 +20,7 @@ const config: StorybookConfig = {
     '@storybook/addon-storysource',
     '@storybook/addon-storyshots',
     '@storybook/addon-a11y',
+    '@storybook/preset-scss'
   ],
   typescript: {
     check: true,
@@ -34,7 +35,6 @@ const config: StorybookConfig = {
   },
   features: {
     postcss: false,
-    // modernInlineRender: true,
     storyStoreV7: !global.navigator?.userAgent?.match?.('jsdom'),
     buildStoriesJson: true,
     babelModeV7: true,
