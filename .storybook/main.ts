@@ -22,6 +22,7 @@ const config: StorybookConfig = {
     '@storybook/addon-a11y',
     '@storybook/preset-scss'
   ],
+  staticDirs: ['../public'],
   typescript: {
     check: true,
     checkOptions: {},
