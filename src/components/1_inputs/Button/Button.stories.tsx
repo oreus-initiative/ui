@@ -25,8 +25,8 @@ Default.args = {
     onClick: () => console.log("You clicked the button !")
 };
 
-export const Icons = Template.bind({});
-Icons.args = {
+export const WithIcons = Template.bind({});
+WithIcons.args = {
     children: "Add",
     disabled: false,
     color: "primary",

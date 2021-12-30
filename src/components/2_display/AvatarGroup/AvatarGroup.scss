@@ -1,0 +1,43 @@
+@import "src/styles/_mixins.scss";
+
+.o_avatargroup {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &.o_avatargroup_sm {
+        .o_avatargroup_showmore {
+            font-size: $text_size_2;
+            margin-left: $spacing_1;
+        }
+        .o_avatar:not(:first-child) {
+            margin-left: -$spacing_2;
+        }
+    }
+    &.o_avatargroup_md {
+        .o_avatargroup_showmore {
+            font-size: $text_size_3;
+            margin-left: $spacing_1;
+        }
+        .o_avatar:not(:first-child) {
+            margin-left: -$spacing_3;
+        }
+    }
+    &.o_avatargroup_lg {
+        .o_avatargroup_showmore {
+            font-size: $text_size_4;
+            margin-left: $spacing_1;
+        }
+        .o_avatar:not(:first-child) {
+            margin-left: -$spacing_4;
+        }
+    }
+    &.o_avatargroup_xl {
+        .o_avatargroup_showmore {
+            font-size: $text_size_6;
+            margin-left: $spacing_2;
+        }
+        .o_avatar:not(:first-child) {
+            margin-left: -$spacing_5;
+        }
+    }
+}

@@ -25,8 +25,8 @@
         width: 100%;
     }
 
-    &:disabled {
-        opacity: 0.5;
+    &:disabled, &.disabled {
+        @include disabled();
     }
 
     @mixin o_btn_contained($main, $dark) {
@@ -43,7 +43,7 @@
     @mixin o_btn_outlined($main, $dark) {
         border: 3px solid $main;
         color: $main;
-        &:hover {
+        &:not(:disabled):hover {
             border: 3px solid $dark;
             color: $dark;
         }
@@ -52,7 +52,7 @@
     @mixin o_btn_text($main, $dark) {
         border: 3px solid transparent;
         color: $main;
-        &:hover {
+        &:not(:disabled):hover {
             color: $dark;
         }
     }

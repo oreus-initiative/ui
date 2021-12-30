@@ -4,7 +4,6 @@ import { Color } from '../../../interfaces/Color';
 import { Size } from '../../../interfaces/Size';
 import { ButtonVariant } from '../../../interfaces/ButtonVariant';
 
-
 import "./Button.scss";
 
 export interface ButtonProps {
@@ -61,8 +60,9 @@ export function Button({
     const getClassName = (): string => {
         return `o_btn ` +
         `o_btn_${variant}_${color} ` +
-        `o_btn_${size}` +
-        `${fullWidth ? 'o_btn_block' : ''}` +
+        `o_btn_${size} ` +
+        `${fullWidth ? 'o_btn_block ' : ''}` +
+        `${disabled ? "disabled " : ""}` +
         `${className || ''}`;
     }
 

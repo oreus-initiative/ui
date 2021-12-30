@@ -101,6 +101,11 @@ $slow: 0.275s;
     border-radius: 50%;
 }
 
+@mixin disabled() {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* This function determines, from a background color, which */
 /*   color between light or dark should the text be.        */
 @function set-color($color) {
