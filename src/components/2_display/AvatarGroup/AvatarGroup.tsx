@@ -41,7 +41,7 @@ export function AvatarGroup({
      * 
      * @returns All classnames required for complete styling
      */
-    const getClassName = (): string => {
+    const getClassname = (): string => {
         return `o_avatargroup ` +
             `o_avatargroup_${size} ` +
             `${disabled ? "disabled " : ""}` +
@@ -58,7 +58,7 @@ export function AvatarGroup({
         return null
     }
 
-    return <div className={getClassName()}>
+    return <div className={getClassname()}>
         {avatars.slice(0, MAX_AVATARS_DISPLAYED).map((avatar) => {
             return <Avatar {...avatar} size={size} disabled={disabled}/>
         })}

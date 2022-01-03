@@ -57,7 +57,7 @@ export function Button({
      * 
      * @returns All classnames required for complete styling
      */
-    const getClassName = (): string => {
+    const getClassname = (): string => {
         return `o_btn ` +
         `o_btn_${variant}_${color} ` +
         `o_btn_${size} ` +
@@ -100,7 +100,7 @@ export function Button({
         return (<a href={href}
             target="_blank"
             rel="noreferrer"
-            className={getClassName()}
+            className={getClassname()}
             style={{ pointerEvents: disabled ? "none" : "all" }}>
             {renderContent()}
         </a>);
@@ -109,7 +109,7 @@ export function Button({
     } else {
         return (<button
             disabled={disabled}
-            className={getClassName()}
+            className={getClassname()}
             onClick={onClick ? onClick : null}>
             {renderContent()}
         </button>);

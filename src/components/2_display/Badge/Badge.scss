@@ -1,0 +1,42 @@
+@import "src/styles/_mixins.scss";
+
+.o_badge_container {
+    display: inline-block;
+    position: relative;
+    .o_badge {
+        border-radius: 9999px;
+        font-size: $text_size_0;
+        padding: 2px 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(55%, -50%);
+        box-shadow: 0 0 4px 1px rgba($gray_0, 0.5);
+
+        &.o_badge_variant_dot {
+            padding: 7px !important;
+            transform: translate(0);
+        }
+
+        &.o_badge_color_primary {
+            background-color: $primary_1;
+            color: set-color($primary_1);
+        }
+        &.o_badge_color_success {
+            background-color: $secondary_1;
+            color: set-color($secondary_1);
+        }
+        &.o_badge_color_warning {
+            background-color: $warning_1;
+            color: set-color($warning_1);
+        }
+        &.o_badge_color_danger {
+            background-color: $danger_1;
+            color: set-color($danger_1);
+        }
+        &.o_badge_color_light {
+            background-color: $gray_4;
+            color: set-color($gray_4);
+        }
+    }
+}

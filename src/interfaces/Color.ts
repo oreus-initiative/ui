@@ -3,5 +3,5 @@ export enum Color {
     LIGHT = 'light',
     SUCCESS = 'success',
     WARNING = 'warning',
-    ERROR = 'error'
+    DANGER = 'danger'
 }

@@ -4,6 +4,9 @@ import { Meta, Story } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
+import { Color } from "../../../interfaces/Color";
+import { Size } from "../../../interfaces/Size";
+import { ButtonVariant } from "../../../interfaces/ButtonVariant";
 
 const meta: Meta = {
     title: 'Inputs/Button',
@@ -19,9 +22,9 @@ export const Default = Template.bind({});
 Default.args = {
     children: "Button",
     disabled: false,
-    color: "primary",
-    variant: "contained",
-    size: "md",
+    color: Color.PRIMARY,
+    variant: ButtonVariant.CONTAINED,
+    size: Size.MD,
     onClick: () => console.log("You clicked the button !")
 };
 
@@ -29,9 +32,9 @@ export const WithIcons = Template.bind({});
 WithIcons.args = {
     children: "Add",
     disabled: false,
-    color: "primary",
-    variant: "contained",
-    size: "md",
+    color: Color.PRIMARY,
+    variant: ButtonVariant.CONTAINED,
+    size: Size.MD,
     startIcon: <FontAwesomeIcon icon={faPlusCircle}/>,
     onClick: () => console.log("You clicked the button !")
 };
@@ -40,9 +43,9 @@ export const AsLink = Template.bind({});
 AsLink.args = {
     children: "Website",
     disabled: false,
-    color: "primary",
-    variant: "contained",
-    size: "md",
+    color: Color.PRIMARY,
+    variant: ButtonVariant.CONTAINED,
+    size: Size.MD,
     startIcon: <FontAwesomeIcon icon={faGlobe}/>,
     href: "https://www.example.com",
     target: "_blank"

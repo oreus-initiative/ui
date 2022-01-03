@@ -43,7 +43,7 @@ export function Avatar({
      * 
      * @returns All classnames required for complete styling
      */
-    const getClassName = (): string => {
+    const getClassname = (): string => {
         return `o_avatar ` +
             `o_avatar_${size} ` +
             `${disabled ? "disabled " : ""}` +
@@ -78,16 +78,16 @@ export function Avatar({
         return (<a href={href}
             target="_blank"
             rel="noreferrer"
-            className={getClassName()}
+            className={getClassname()}
             style={{ pointerEvents: disabled ? "none" : "all", ...style }}>
             {renderContent()}
         </a>);
     } else if (href && target.indexOf("_blank") === -1) {
         // Todo; Handle internal links ?
-        return (<div className={getClassName()} style={style}>{renderContent()}</div>);
+        return (<div className={getClassname()} style={style}>{renderContent()}</div>);
     } else {
         return <button
-            className={getClassName()}
+            className={getClassname()}
             disabled={disabled}
             onClick={onClick}
             style={style}>
