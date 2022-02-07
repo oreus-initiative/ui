@@ -18,6 +18,7 @@ export interface LabelProps {
     href?: string,
     target?: string
     onClick?: Function,
+    showRemove: boolean,
     variant?: ButtonVariant,
     fullWidth?: boolean
 };

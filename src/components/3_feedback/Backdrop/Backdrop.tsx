@@ -22,6 +22,6 @@ export function Backdrop({children, isOpen} : BackdropProps) {
             </div>
         )
     } else {
-        return null;
+        return <></>;
     }
 }
