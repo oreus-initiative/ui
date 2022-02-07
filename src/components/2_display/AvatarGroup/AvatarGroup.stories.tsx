@@ -42,7 +42,7 @@ Default.args = {
             // group only displays 4 elements.
             href: "https://www.example.com/?avatar=5",
             target:"_blank"
-        },
+        }
     ],
     disabled: false,
     showOthers: true,

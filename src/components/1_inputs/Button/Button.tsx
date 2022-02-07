@@ -7,12 +7,12 @@ import { ButtonVariant } from '../../../interfaces/ButtonVariant';
 import "./Button.scss";
 
 export interface ButtonProps {
-    startIcon?: Node,
-    endIcon?: Node,
-    children?: Node,
+    startIcon?: React.ReactNode,
+    endIcon?: React.ReactNode,
+    children?: React.ReactNode,
     className?: string,
     color?: Color,
-    disabled: Boolean,
+    disabled?: boolean,
     href?: string,
     target?: string
     onClick?: Function,
@@ -49,7 +49,7 @@ export function Button({
     target,
     onClick,
     fullWidth
-}) {
+} : ButtonProps) {
 
     /**
      * From the provided props, evaluates which classnames to
@@ -75,7 +75,7 @@ export function Button({
      * @param pos Position of the icon ('start' or 'end')
      * @returns JSX rendering an icon with proper margins
      */
-    const renderIcon = (icon: Node, pos: 'start' | 'end') => {
+    const renderIcon = (icon: React.ReactNode, pos: 'start' | 'end') => {
         let margin;
         if (icon) {
             if (children) {

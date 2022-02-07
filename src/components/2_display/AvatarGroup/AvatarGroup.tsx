@@ -12,8 +12,8 @@ export interface AvatarGroupProps {
         target?: string,
         onClick?: Function
     }>,
-    disabled: Boolean,
-    showOthers: Boolean,
+    disabled: boolean,
+    showOthers: boolean,
     size?: typeof Size,
     className: string
 };
@@ -27,13 +27,20 @@ export const defaultProps = {
 
 const MAX_AVATARS_DISPLAYED = 4;
 
+/**
+ * Displays a group of simplified avatar to represent
+ * a group of users.
+ * 
+ * @param props Props of the Avatar Group 
+ * @returns Avatar Group Component
+ */
 export function AvatarGroup({
     avatars = defaultProps.avatars,
     disabled = defaultProps.disabled,
     showOthers = defaultProps.showOthers,
     size = defaultProps.size,
     className
-}) {
+} : AvatarGroupProps) {
 
     /**
      * From the provided props, evaluates which classnames to

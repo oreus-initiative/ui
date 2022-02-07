@@ -10,7 +10,7 @@ export interface AvatarProps {
     thumbnail: string,
     name?: string,
     desc?: string,
-    disabled: Boolean,
+    disabled: boolean,
     href?: string,
     target?: string
     onClick?: Function,
@@ -24,6 +24,12 @@ export const defaultProps = {
     disabled: false
 };
 
+/**
+ * Displays a user's avatar.
+ * 
+ * @param props Props of the Avatar Component 
+ * @returns Avatar Component
+ */
 export function Avatar({
     thumbnail,
     name,
@@ -35,7 +41,7 @@ export function Avatar({
     size,
     className,
     style
-}) {
+} : AvatarProps) {
 
     /**
      * From the provided props, evaluates which classnames to

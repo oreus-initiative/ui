@@ -11,7 +11,11 @@ const meta: Meta = {
 export default meta;
 
 
-const Template: Story<SeparatorProps> = (args) => <Separator {...args}/>;
+const Template: Story<SeparatorProps> = (args) => <div style={{height: '100%', width: '100%', position: 'relative'}}>
+    <Separator {...args}/>
+</div>;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+    title: "Horizontal Separator",
+};

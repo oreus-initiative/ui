@@ -1,13 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-export interface SeparatorProps {};
+import './Separator.scss';
+
+export interface SeparatorProps {
+    title?: string,
+};
 
 export const defaultProps = {};
 
-export function Separator() {
+/**
+ * Displays an Horizontal rule with a centered title.
+ */
+export function Separator({
+    title
+} : SeparatorProps) {
     return (
-        <div>
-            Not Implemented
+        <div className={`o_separator`}>
+            <span className="o_separator_title">{title}</span>
         </div>
     )
 }

@@ -30,8 +30,8 @@ a.o_avatar {
     .o_avatar_img {
         border: 4px solid $gray_4;
         border-radius: 9999px;
+        background-color: $gray_4;
         &.o_avatar_img_placeholder {
-            background-color: $gray_4;
             display: flex;
             justify-content: center;
             align-items: center;

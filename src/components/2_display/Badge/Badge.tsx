@@ -7,7 +7,7 @@ import "./Badge.scss";
 
 export interface BadgeProps {
     number: Number,
-    children: Node,
+    children: React.ReactNode,
     color?: Color,
     variant?: string
 };
@@ -17,12 +17,20 @@ export const defaultProps = {
     variant: BadgeVariant.NORMAL
 };
 
+/**
+ * Displays a badge displaying either a simple dot
+ * on the top right of some content or a bubble with
+ * numbers (like a notification).
+ * 
+ * @param Props Props of the Badge component 
+ * @returns 
+ */
 export function Badge({
     number,
     children,
     color = defaultProps.color,
     variant = defaultProps.variant
-}) {
+} : BadgeProps) {
 
     const MAX_NUMBER = 99;
 

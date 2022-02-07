@@ -1,0 +1,75 @@
+@import "src/styles/_mixins.scss";
+
+.o_label {
+    border: 0;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: unset;
+    @include transition(color);
+    @include transition(background-color);
+    @include transition(border);
+    @include transition(opacity);
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    padding: $spacing_0 $spacing_2;
+    font-size: $text_size_0;
+    
+    &:not(:disabled,span) {
+        cursor: pointer;
+    }
+
+    &.o_label_block {
+        display: block;
+        width: 100%;
+    }
+
+    &:disabled, &.disabled {
+        @include disabled();
+    }
+
+    @mixin o_label_contained($main, $dark) {
+        background-color: rgba($main, 0.3);
+        color: $main;
+        &:not(:disabled,span):hover {
+            background-color: rgba($dark, 0.3);
+            color: $dark;
+        }
+    }
+
+    @mixin o_label_outlined($main, $dark) {
+        color: $main;
+        &:not(:disabled,span):hover {
+            color: $dark;
+        }
+    }
+
+    @mixin o_label_text($main, $dark) {
+        color: $main;
+        &:not(:disabled,span):hover {
+            color: $dark;
+        }
+    }
+
+    &.o_label_contained_primary {@include o_label_contained($primary_1, $primary_0);}
+    &.o_label_outlined_primary {@include o_label_outlined($primary_1, $primary_0);}
+    &.o_label_text_primary {@include o_label_text($primary_1, $primary_0);}
+
+    &.o_label_contained_light {@include o_label_contained($gray_4, $gray_3);}
+    &.o_label_outlined_light {@include o_label_outlined($gray_4, $gray_3);}
+    &.o_label_text_light {@include o_label_text($gray_4, $gray_3);}
+
+    &.o_label_contained_success {@include o_label_contained($secondary_1, $secondary_0);}
+    &.o_label_outlined_success {@include o_label_outlined($secondary_1, $secondary_0);}
+    &.o_label_text_success {@include o_label_text($secondary_1, $secondary_0);}
+
+    &.o_label_contained_warning {@include o_label_contained($warning_1, $warning_0);}
+    &.o_label_outlined_warning {@include o_label_outlined($warning_1, $warning_0);}
+    &.o_label_text_warning {@include o_label_text($warning_1, $warning_0);}
+
+    &.o_label_contained_danger {@include o_label_contained($danger_1, $danger_0);}
+    &.o_label_outlined_danger {@include o_label_outlined($danger_1, $danger_0);}
+    &.o_label_text_danger {@include o_label_text($danger_1, $danger_0);}
+}
