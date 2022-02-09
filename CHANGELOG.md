@@ -1,7 +1,5 @@
 # v0.1.0 (Tue Feb 08 2022)
 
-#### ⚠️ Pushed to `main`
-
 - Update issue templates ([@DominicF96](https://github.com/DominicF96))
 - Created Card component, adjusted Alerts to use Cards, created Modal component. ([@DominicF96](https://github.com/DominicF96))
 - Fixed a few things. ([@DominicF96](https://github.com/DominicF96))
