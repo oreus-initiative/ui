@@ -55,7 +55,7 @@
     "react"
   ],
   "author": "Dominic Fournier <me@dominicfournier.com>",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": " GNU GPLv3",
   "bugs": {
     "url": "https://github.com/oreus-initiative/ui/issues"
   },
