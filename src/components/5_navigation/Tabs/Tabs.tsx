@@ -7,7 +7,7 @@ export const defaultProps = {};
 export function Tabs() {
     return (
         <div>
-            Not Implementedd
+            Not Implemented
         </div>
     )
 }
