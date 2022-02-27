@@ -1,76 +1,36 @@
 // Inputs
-import { Button } from "./components/1_inputs/Button/Button";
-import { Form } from "./components/1_inputs/Form/Form";
-import { FormField } from "./components/1_inputs/FormField/FormField";
+export * from "./components/1_inputs/Button/Button";
+export * from "./components/1_inputs/Form/Form";
+export * from "./components/1_inputs/FormField/FormField";
 
 // Display
-import { Avatar } from "./components/2_display/Avatar/Avatar";
-import { AvatarGroup } from "./components/2_display/AvatarGroup/AvatarGroup";
-import { Badge } from "./components/2_display/Badge/Badge";
-import { Label } from "./components/2_display/Label/Label";
-import { Separator } from "./components/2_display/Separator/Separator";
+export * from "./components/2_display/Avatar/Avatar";
+export * from "./components/2_display/AvatarGroup/AvatarGroup";
+export * from "./components/2_display/Badge/Badge";
+export * from "./components/2_display/Label/Label";
+export * from "./components/2_display/Separator/Separator";
 
 // Feedback
-import { Alert } from "./components/3_feedback/Alert/Alert";
-import { Backdrop } from "./components/3_feedback/Backdrop/Backdrop";
-import { Progress } from "./components/3_feedback/Progress/Progress";
-import { Skeleton } from "./components/3_feedback/Skeleton/Skeleton";
-import { Toast } from "./components/3_feedback/Toast/Toast";
+export * from "./components/3_feedback/Alert/Alert";
+export * from "./components/3_feedback/Backdrop/Backdrop";
+export * from "./components/3_feedback/Progress/Progress";
+export * from "./components/3_feedback/Skeleton/Skeleton";
+export * from "./components/3_feedback/Toast/Toast";
 
 // Containers
-import { AppBar } from "./components/4_containers/AppBar/AppBar";
-import { Card } from "./components/4_containers/Card/Card";
-import { Modal } from "./components/4_containers/Modal/Modal";
-import { Sidebar } from "./components/4_containers/Sidebar/Sidebar";
+export * from "./components/4_containers/AppBar/AppBar";
+export * from "./components/4_containers/Card/Card";
+export * from "./components/4_containers/Modal/Modal";
+export * from "./components/4_containers/Sidebar/Sidebar";
 
 // Navigation
-import { Breadcrumbs } from "./components/5_navigation/Breadcrumbs/Breadcrumbs";
-import { Pagination } from "./components/5_navigation/Pagination/Pagination";
-import { Stepper } from "./components/5_navigation/Stepper/Stepper";
-import { Tabs } from "./components/5_navigation/Tabs/Tabs";
+export * from "./components/5_navigation/Breadcrumbs/Breadcrumbs";
+export * from "./components/5_navigation/Pagination/Pagination";
+export * from "./components/5_navigation/Stepper/Stepper";
+export * from "./components/5_navigation/Tabs/Tabs";
 
 // Types
-import { BadgeVariant } from "./interfaces/BadgeVariant";
-import { ButtonVariant } from "./interfaces/ButtonVariant";
-import { Color } from "./interfaces/Color";
-import { Size } from "./interfaces/Size";
-
-module.exports = {
-  inputs: {
-    Button,
-    Form,
-    FormField
-  },
-  display: {
-    Avatar,
-    AvatarGroup,
-    Badge,
-    Label,
-    Separator
-  },
-  feedback: {
-    Alert,
-    Backdrop,
-    // Progress,    // Not implemented
-    // Skeleton,    // Not implemented
-    // Toast,       // Not implemented
-  },
-  containers: {
-    // AppBar,      // Not implemented
-    Card,
-    Modal,
-    // Sidebar,     // Not implemented
-  },
-  navigation: {
-    // Breadcrumbs, // Not implemented
-    // Pagination,  // Not implemented
-    // Stepper,     // Not implemented
-    // Tabs         // Not implemented
-  },
-  types: {
-    BadgeVariant,
-    ButtonVariant,
-    Color,
-    Size
-  }
-}
+export * from "./interfaces/BadgeVariant";
+export * from "./interfaces/ButtonVariant";
+export * from "./interfaces/Color";
+export * from "./interfaces/Size";

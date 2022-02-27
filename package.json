@@ -2,6 +2,22 @@
   "name": "@oreus/ui",
   "version": "1.0.2",
   "private": false,
+  "description": "Oreus's React UI Library, powered by Storybook.",
+  "homepage": "http://oreus-initiative.github.io/ui",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oreus-initiative/ui.git"
+  },
+  "author": "Dominic Fournier <me@dominicfournier.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/oreus-initiative/ui/issues"
+  },
+  "keywords": [
+    "ui",
+    "react"
+  ],
   "scripts": {
     "build-storybook": "cross-env STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true build-storybook",
     "build-docs": "build-storybook -o docs-build",
@@ -18,7 +34,8 @@
     "formik": "^2.2.9",
     "prop-types": "15.7.2",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "react-toastify": "^8.2.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
@@ -46,21 +63,5 @@
     "style-loader": "^2",
     "typescript": "^3.9.7",
     "webpack": "4"
-  },
-  "description": "This Storybook demonstrates support for TypeScript in Storybook without additional configuration.",
-  "main": "webpack.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oreus-initiative/ui.git"
-  },
-  "keywords": [
-    "ui",
-    "react"
-  ],
-  "author": "Dominic Fournier <me@dominicfournier.com>",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/oreus-initiative/ui/issues"
-  },
-  "homepage": "http://oreus-initiative.github.io/ui"
+  }
 }
