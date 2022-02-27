@@ -1,4 +1,4 @@
-# v1.0.1 (Tue Feb 08 2022)
+# v1.0.2 (Tue Feb 08 2022)
 
 - Update issue templates ([@DominicF96](https://github.com/DominicF96))
 - Created Card component, adjusted Alerts to use Cards, created Modal component. ([@DominicF96](https://github.com/DominicF96))
