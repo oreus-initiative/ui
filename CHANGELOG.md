@@ -1,3 +1,11 @@
+# v1.0.3 (Tue Feb 27 2022)
+
+- Fixed components export to make library usable.
+
+#### Authors: 1
+
+- Dominic Fournier ([@DominicF96](https://github.com/DominicF96))
+
 # v1.0.2 (Tue Feb 08 2022)
 
 - Update issue templates ([@DominicF96](https://github.com/DominicF96))
