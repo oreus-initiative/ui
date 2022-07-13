@@ -1,13 +1,13 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
+  "name": "@oreus/ui-experimental",
+  "version": "0.5.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "Oreus's React UI Library, powered by Storybook.",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
@@ -17,28 +17,11 @@
     "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
-  },
-  "keywords": [
-    "React",
-    "Component",
-    "Library",
-    "Rollup",
-    "Typescript",
-    "Sass",
-    "Storybook"
-  ],
-  "author": "Harvey Delaney",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
-  },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -69,10 +52,27 @@
     "ts-jest": "^26.5.6",
     "typescript": "^4.4.2"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.2.0"
-  }
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oreus-initiative/ui.git"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "Library",
+    "Rollup",
+    "Typescript",
+    "Sass",
+    "Storybook"
+  ],
+  "author": "Dominic Fournier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oreus-initiative/ui/issues"
+  },
+  "homepage": "https://github.com/oreus-initiative/ui/blob/main/README.md"
 }
