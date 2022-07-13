@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+@mixin contained {
+  position: relative;
+  max-width: 1160px;
+  padding: 16px;
+  margin: auto;
+}
+
+@mixin border($color) {
+  border: solid 5px $color;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  > * {
+    margin: 16px;
+  }
+}

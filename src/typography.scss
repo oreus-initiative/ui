@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$roboto: Roboto, Helvetica Neue, sans-serif;
+
+@mixin font-defaults {
+  font-family: $roboto;
+}
+
+@mixin heading {
+  @include font-defaults;
+
+  font-size: 40px;
+  font-weight: bold;
+}

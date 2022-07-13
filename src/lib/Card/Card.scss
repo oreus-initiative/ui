@@ -1,0 +1,28 @@
+// Generated with util/create-component.js
+@import "../../variables.scss";
+@import "../../typography.scss";
+@import "../../mixins.scss";
+
+.oreus-card-container {
+  color: $white;
+  @include font-defaults;
+  background-color: $white;
+  color: $gray-1;
+  padding: 32px;
+  width: 100%;
+  max-width: 100%;
+  h2 {
+    color: $primary;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .oreus-card-subtitle {
+    color: $gray-2;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .card-content {
+    padding-top: 16px;
+  }
+}

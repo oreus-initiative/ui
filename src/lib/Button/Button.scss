@@ -1,0 +1,144 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+@import "../../typography.scss";
+
+.oreus-btn {
+  position: relative;
+  color: $white;
+  @include font-defaults;
+  background: $primary;
+  font-weight: bold;
+  white-space: nowrap;
+  $white-space: nowrap;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 14px 32px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 18px;
+    padding: 16px 36px;
+  }
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 100ms ease-in-out background-color, 100ms ease-in-out color,
+    100ms ease-in-out border-image-source;
+  &.oreus-btn-fw {
+    width: 100%;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 60%;
+  }
+  &:not(:disabled) {
+    cursor: pointer;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &.oreus-btn-outlined {
+    background-color: transparent;
+    @include border($primary);
+    color: $primary;
+    &.oreus-btn-light {
+      border: 5px solid $white;
+      color: $white;
+    }
+    &.oreus-btn-dark {
+      @include border($gray-1);
+      color: $gray-1;
+    }
+    &:not(:disabled) {
+      &:hover {
+        @include border($primary-dark);
+        color: $primary-dark;
+        &.oreus-btn-light {
+          @include border($gray-4);
+          color: $gray-4;
+        }
+        &.oreus-btn-dark {
+          @include border($gray-0);
+          color: $gray-0;
+        }
+      }
+    }
+  }
+  &.oreus-btn-contained {
+    z-index: 0;
+    border: 5px solid $primary;
+    &.oreus-btn-light {
+      @include border($white);
+      color: $primary;
+      background-color: $white;
+    }
+    &.oreus-btn-dark {
+      @include border($gray-1);
+      color: $white;
+      background-color: $gray-1;
+    }
+    &:not(:disabled) {
+      &:hover {
+        background-color: $primary-dark;
+        @include border($primary-dark);
+        &.oreus-btn-light {
+          color: $primary-dark;
+          background-color: $gray-4;
+          @include border($gray-4);
+        }
+        &.oreus-btn-dark {
+          @include border($gray-0);
+          color: $gray-4;
+          background-color: $gray-0;
+        }
+      }
+    }
+  }
+  &.oreus-btn-text {
+    background-color: transparent;
+    color: $primary;
+    @include border(transparent);
+    &.oreus-btn-light {
+      color: $white;
+    }
+    &.oreus-btn-dark {
+      color: $gray-1;
+    }
+    &:not(:disabled) {
+      &:hover {
+        color: $primary-dark;
+        &.oreus-btn-light {
+          color: $gray-4;
+        }
+        &.oreus-btn-dark {
+          color: $gray-0;
+        }
+      }
+    }
+  }
+  &.oreus-btn-link {
+    font-size: inherit;
+    padding: 0;
+    border: 0;
+    display: inline;
+    background-color: transparent;
+    color: $primary;
+    &.oreus-btn-light {
+      color: $white;
+    }
+    &.oreus-btn-dark {
+      color: $gray-1;
+    }
+    &:not(:disabled) {
+      &:hover {
+        color: $primary-dark;
+        &.oreus-btn-light {
+          color: $gray-4;
+        }
+        &.oreus-btn-dark {
+          color: $gray-0;
+        }
+      }
+    }
+  }
+}

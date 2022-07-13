@@ -1,0 +1,92 @@
+// Generated with util/create-component.js
+@import "../../variables.scss";
+@import "../../typography.scss";
+@import "../../mixins.scss";
+
+.oreus-dropdown-container {
+  position: relative;
+  color: $white;
+  @include font-defaults;
+  .oreus-dropdown {
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    width: 100%;
+    @media (min-width: $breakpoint-sm) {
+      min-width: 250px;
+      max-width: 250px;
+    }
+    svg {
+      margin-right: 0 !important;
+      margin-left: 24px;
+    }
+    span.oreus-btn-text {
+      text-overflow: ellipsis;
+      white-space: nowrap !important;
+      text-align: left;
+      overflow: hidden;
+    }
+  }
+  .oreus-dropdown-options {
+    max-height: 200px;
+    animation-name: fade-in;
+    animation-duration: 100ms;
+    z-index: 20;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    background-color: $white;
+    @include border($primary);
+    min-width: 250px;
+    overflow-y: auto;
+    ul {
+      width: 100%;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      li {
+        cursor: pointer;
+        .oreus-btn {
+          width: 100%;
+          padding: 8px 24px;
+          text-align: left;
+          &.option-selected {
+            background-color: $primary !important;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $gray-4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $primary-dark;
+}

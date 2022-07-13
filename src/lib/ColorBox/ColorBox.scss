@@ -1,0 +1,16 @@
+// Generated with util/create-component.js
+@import "../../variables.scss";
+@import "../../mixins.scss";
+@import "../../typography.scss";
+
+.oreus-color-box {
+  @include font-defaults;
+  height: 80px;
+  width: 80px;
+  background-color: $white;
+  padding: 5px;
+  .oreus-color-box-color {
+    height: 100%;
+    width: 100%;
+  }
+}
