@@ -1,5 +1,5 @@
 {
-  "name": "@oreus/ui-experimental",
+  "name": "@oreus/ui",
   "version": "0.5.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
