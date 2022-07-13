@@ -1,11 +1,13 @@
 // Generated with util/create-component.js
-import React from "react";
+import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 
 export default {
-    title: "Checkbox"
+  title: "Checkbox",
 };
 
-export const WithBar = () => <Checkbox foo="bar" />;
+export const Default = () => {
+  const [value, setValue] = useState(false);
 
-export const WithBaz = () => <Checkbox foo="baz" />;
+  return <Checkbox label="Option A" value={value} onChange={setValue} />;
+};

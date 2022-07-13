@@ -1,0 +1,12 @@
+// Generated with util/create-component.js
+@import "../../variables.scss";
+@import "../../typography.scss";
+
+.oreus-contact {
+  @include font-defaults;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  .oreus-contact-newsletter {}
+  .oreus-contact-coords {}
+}

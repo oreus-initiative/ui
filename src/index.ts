@@ -4,7 +4,6 @@ import Checkbox from "./lib/Checkbox/Checkbox";
 import ColorBox from "./lib/ColorBox/ColorBox";
 import Copyright from "./lib/Copyright/Copyright";
 import Dropdown from "./lib/Dropdown/Dropdown";
-import Footer from "./lib/Footer/Footer";
 import MediaCard from "./lib/MediaCard/MediaCard";
 import Navbar from "./lib/Navbar/Navbar";
 import OutlinedText from "./lib/OutlinedText/OutlinedText";

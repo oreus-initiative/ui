@@ -2,11 +2,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import Footer from "./Footer";
-import { FooterProps } from "./Footer.types";
+import Contact from "./Contact";
+import { ContactProps } from "./Contact.types";
 
 describe("Test Component", () => {
-  let props: FooterProps;
+  let props: ContactProps;
 
   beforeEach(() => {
     props = {
@@ -14,13 +14,13 @@ describe("Test Component", () => {
     };
   });
 
-  const renderComponent = () => render(<Footer {...props} />);
+  const renderComponent = () => render(<Contact {...props} />);
 
   it("should render foo text correctly", () => {
     props.foo = "harvey was here";
     const { getByTestId } = renderComponent();
 
-    const component = getByTestId("Footer");
+    const component = getByTestId("Contact");
 
     expect(component).toHaveTextContent("harvey was here");
   });

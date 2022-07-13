@@ -1,9 +1,51 @@
 // Generated with util/create-component.js
 @import "../../variables.scss";
 @import "../../typography.scss";
+@import "../../mixins.scss";
 
-.foo-bar {
+.oreus-checkbox-container {
   @include font-defaults;
-
-  color: $harvey-green;
+  display: inline-block;
+  label {
+    line-height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * {
+    cursor: pointer;
+  }
+  &:hover {
+    .oreus-checkbox-check {
+      background-color: $gray-4;
+      &.oreus-checkbox-checked {
+        color: $gray-3;
+      }
+      color: $gray-0;
+    }
+  }
+  .oreus-checkbox-check {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    color: $white;
+    &.oreus-checkbox-checked {
+      background-color: $gray-1;
+    }
+    font-size: 20px;
+    margin-right: 8px;
+    @include border($gray-1);
+    background-color: white;
+    transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  .oreus-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 }

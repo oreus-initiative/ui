@@ -2,8 +2,18 @@
 @import "../../variables.scss";
 @import "../../typography.scss";
 
-.foo-bar {
+.oreus-copyright {
   @include font-defaults;
-
-  color: $harvey-green;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .oreus-copyright-flavor-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

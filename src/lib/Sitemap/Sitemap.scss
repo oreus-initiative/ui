@@ -2,8 +2,31 @@
 @import "../../variables.scss";
 @import "../../typography.scss";
 
-.foo-bar {
+.oreus-sitemap {
   @include font-defaults;
-
-  color: $harvey-green;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  .oreus-sitemap-category {
+    padding: 32px;
+    .oreus-sitemap-category-list {
+      margin-left: 0;
+      padding: 0;
+      list-style: none;
+      .oreus-sitemap-category-list-item {
+        transition: 0.2s ease-in-out transform;
+        &:hover {
+          transform: scale(1.02);
+        }
+        a {
+          line-height: 32px;
+          text-decoration: none;
+          color: $gray-4;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }

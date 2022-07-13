@@ -1,4 +1,8 @@
 // Generated with util/create-component.js
 export interface CheckboxProps {
-    foo: string;
+  id: string;
+  name: string;
+  label: string;
+  value: boolean;
+  onChange: any;
 }

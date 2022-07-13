@@ -1,4 +1,7 @@
 // Generated with util/create-component.js
 export interface CopyrightProps {
-    foo: string;
+  flavor: string;
+  flavorImg: string;
+  year: string | number;
+  company: string;
 }
