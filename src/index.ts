@@ -3,6 +3,7 @@ import Button from "./lib/Button";
 import Card from "./lib/Card";
 import Checkbox from "./lib/Checkbox";
 import ColorBox from "./lib/ColorBox";
+import Contact from "./lib/Contact";
 import Copyright from "./lib/Copyright";
 import Dropdown from "./lib/Dropdown";
 import MediaCard from "./lib/MediaCard";
@@ -19,6 +20,7 @@ export {
   Card,
   Checkbox,
   ColorBox,
+  Contact,
   Copyright,
   Dropdown,
   MediaCard,
