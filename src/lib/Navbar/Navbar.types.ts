@@ -7,6 +7,7 @@ export interface NavbarProps {
   active?: string;
   actionLabel?: string;
   actionOnClick?: any;
+  onRouteClicked?: any;
   phoneNumber?: string;
   logo?: string;
 }
