@@ -26,7 +26,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
       <input
         type="checkbox"
         data-testid="Checkbox"
-        checked={value === true ? "checked" : ""}
+        checked={value}
         className="oreus-checkbox-input"
         onChange={() => onChange(!value)}
         id={id}
