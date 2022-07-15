@@ -2,8 +2,39 @@
 @import "../../variables.scss";
 @import "../../typography.scss";
 
-.foo-bar {
+.oreus-navbar {
   @include font-defaults;
-
-  color: $harvey-green;
+  background-color: $primary;
+  height: 50px;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  font-size: 18px;
+  .oreus-navbar-left,
+  .oreus-navbar-right {
+    margin-top: -16px;
+    height: calc(100% + 32px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 16px;
+    }
+  }
+  .oreus-navbar-logo {
+    max-height: calc(100% - 32px);
+    margin-right: 32px;
+  }
+  .oreus-btn {
+    padding: 0 16px;
+    height: calc(100%);
+    &:disabled {
+      opacity: 1;
+    }
+  }
 }

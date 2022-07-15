@@ -5,8 +5,16 @@ import { BlueprintContainerProps } from "./BlueprintContainer.types";
 
 import "./BlueprintContainer.scss";
 
-const BlueprintContainer: React.FC<BlueprintContainerProps> = ({ children }) => (
-  <div data-testid="BlueprintContainer" className="oreus-blueprint-container">
+const BlueprintContainer: React.FC<BlueprintContainerProps> = ({
+  children,
+  style,
+  className,
+}) => (
+  <div
+    data-testid="BlueprintContainer"
+    className={`oreus-blueprint-container ${className || ""}`}
+    style={style}
+  >
     {children}
   </div>
 );

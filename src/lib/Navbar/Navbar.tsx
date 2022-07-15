@@ -4,10 +4,42 @@ import React from "react";
 import { NavbarProps } from "./Navbar.types";
 
 import "./Navbar.scss";
+import Button from "../Button";
 
-const Navbar: React.FC<NavbarProps> = ({ foo }) => (
-    <div data-testid="Navbar" className="foo-bar">{foo}</div>
-);
+const Navbar: React.FC<NavbarProps> = ({
+  routes,
+  active,
+  actionLabel,
+  actionOnClick = () => {},
+  phoneNumber,
+  onRouteClicked = () => {},
+  logo,
+}) => {
+  const isActiveRoute = (route: string) => {
+    return active.indexOf(route.href) > -1;
+  };
+
+  return (
+    <div data-testid="Navbar" className="oreus-navbar">
+      <div className="oreus-navbar-left">
+        <img src={logo} className="oreus-navbar-logo" />
+        {routes.map((route, index) => (
+          <Button
+            key={`route_${index}`}
+            label={route.title}
+            variant={isActiveRoute(route) ? "contained" : "text"}
+            disabled={isActiveRoute(route)}
+            color="light"
+            onClick={() => onRouteClicked(route.href)}
+          />
+        ))}
+      </div>
+      <div className="oreus-navbar-right">
+        <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+        <Button label={actionLabel} variant="contained" color="light" />
+      </div>
+    </div>
+  );
+};
 
 export default Navbar;
-
