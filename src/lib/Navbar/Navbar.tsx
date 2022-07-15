@@ -22,7 +22,11 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <div data-testid="Navbar" className={`oreus-navbar ${className || ""}`} style={style}>
+    <div
+      data-testid="Navbar"
+      className={`oreus-navbar ${className || ""}`}
+      style={style}
+    >
       <div className="oreus-navbar-left">
         <img src={logo} className="oreus-navbar-logo" />
         {routes.map((route, index) => (

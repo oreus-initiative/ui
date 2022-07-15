@@ -7,6 +7,7 @@ import Copyright from "./lib/Copyright";
 import Dropdown from "./lib/Dropdown";
 import MediaCard from "./lib/MediaCard";
 import Navbar from "./lib/Navbar";
+import SocialLink from "./lib/SocialLink";
 import Sitemap from "./lib/Sitemap";
 import TextInput from "./lib/TextInput";
 import TextInvertingBox from "./lib/TextInvertingBox";
@@ -22,6 +23,7 @@ export {
   Dropdown,
   MediaCard,
   Navbar,
+  SocialLink,
   Sitemap,
   TextInput,
   TextInvertingBox,
