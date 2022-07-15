@@ -30,17 +30,16 @@ const routes = [
   },
 ];
 
-const renderActions = () => {
-  return <></>;
-};
-
 export const Default = () => (
-  <Navbar
-    logo="/vectors/logo.svg"
-    routes={routes}
-    actionLabel="First Contact"
-    active={routes[0].href}
-    actionOnClick={() => alert("First Contact")}
-    phoneNumber="514-775-1234"
-  />
+  <div style={{ minHeight: "2000px" }}>
+    <Navbar
+      logo="/vectors/logo.svg"
+      routes={routes}
+      actionLabel="First Contact"
+      active={routes[0].href}
+      actionOnClick={() => alert("First Contact")}
+      onRouteClicked={(href) => alert(`Redirect to '${href}'.`)}
+      phoneNumber="514-775-1234"
+    />
+  </div>
 );

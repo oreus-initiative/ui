@@ -7,7 +7,10 @@
   background-color: $primary;
   height: 50px;
   padding: 16px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   color: $white;
