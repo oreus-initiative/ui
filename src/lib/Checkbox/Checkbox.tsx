@@ -15,7 +15,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
   onChange,
 }) => (
   <div className="oreus-checkbox-container">
-    <label for={id}>
+    <label>
       <span
         className={`oreus-checkbox-check ${
           value === true ? "oreus-checkbox-checked" : ""
