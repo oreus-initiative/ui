@@ -5,9 +5,20 @@ import { TextInputProps } from "./TextInput.types";
 
 import "./TextInput.scss";
 
-const TextInput: React.FC<TextInputProps> = ({ foo }) => (
-    <div data-testid="TextInput" className="foo-bar">{foo}</div>
-);
+const TextInput: React.ForwardRefRenderFunction<unknown, TextInputProps> = (
+  props,
+  ref
+) => {
+  const { className } = props;
 
-export default TextInput;
+  return (
+    <input
+      data-testid="TextInput"
+      ref={ref}
+      className={`oreus-text-input ${className}`}
+      {...props}
+    />
+  );
+};
 
+export default React.forwardRef(TextInput);

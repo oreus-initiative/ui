@@ -7,6 +7,26 @@
   display: flex;
   justify-content: space-between;
   color: $white;
-  .oreus-contact-newsletter {}
-  .oreus-contact-coords {}
+  .oreus-contact-newsletter {
+    .oreus-contact-newsletter-action {
+      min-height: 50px;
+      position: relative;
+      .oreus-text-input {
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 400px;
+      }
+      display: flex;
+      .oreus-contact-btn {
+        min-height: 100% !important;
+        max-height: 100% !important;
+        color: $gray-1;
+        &:hover {
+          color: $gray-0 !important;
+        }
+      }
+    }
+  }
+  .oreus-contact-coords {
+  }
 }

@@ -1,6 +1,8 @@
 // Generated with util/create-component.js
 export interface ContactProps {
-    foo: string;
+  newsletter: 
+  coords,
+  onSubscribe,
 }
 
 export interface ContactNewsletter

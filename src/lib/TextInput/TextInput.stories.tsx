@@ -6,6 +6,4 @@ export default {
     title: "TextInput"
 };
 
-export const WithBar = () => <TextInput foo="bar" />;
-
-export const WithBaz = () => <TextInput foo="baz" />;
+export const Default = () => <TextInput placeholder="Enter some text..." />;
