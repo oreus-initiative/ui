@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({
   logo,
 }) => {
   const isActiveRoute = (route: string) => {
-    return active.indexOf(route.href) > -1;
+    return active.indexOf(route) > -1;
   };
 
   return (
@@ -27,8 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({
           <Button
             key={`route_${index}`}
             label={route.title}
-            variant={isActiveRoute(route) ? "contained" : "text"}
-            disabled={isActiveRoute(route)}
+            variant={isActiveRoute(route.href) ? "contained" : "text"}
+            disabled={isActiveRoute(route.href)}
             color="light"
             onClick={() => onRouteClicked(route.href)}
           />
