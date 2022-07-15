@@ -8,6 +8,9 @@
   display: flex;
   flex-wrap: wrap;
   .oreus-sitemap-category {
+    &:first-child {
+      padding-left: 0;
+    }
     padding: 32px;
     .oreus-sitemap-category-list {
       margin-left: 0;
