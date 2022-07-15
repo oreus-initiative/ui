@@ -5,4 +5,6 @@ export interface CheckboxProps {
   label: string;
   value: boolean;
   onChange: any;
+  style?: any;
+  className?: string;
 }

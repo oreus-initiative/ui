@@ -12,6 +12,8 @@ export interface ContactProps {
     email?: string;
   }
   onSubscribe?: any;
+  style?: any;
+  className?: string;
 }
 
 export interface ContactNewsletter

@@ -15,7 +15,7 @@ const TextInput: React.ForwardRefRenderFunction<unknown, TextInputProps> = (
     <input
       data-testid="TextInput"
       ref={ref}
-      className={`oreus-text-input ${className}`}
+      className={`oreus-text-input ${className || ""}`}
       {...props}
     />
   );

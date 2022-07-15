@@ -9,4 +9,6 @@ export interface SitemapProps {
       }
     ]
   }>;
+  style?: any;
+  className?: string;
 }

@@ -10,8 +10,14 @@ const Copyright: React.FC<CopyrightProps> = ({
   flavorImg,
   year,
   company,
+  className,
+  style,
 }) => (
-  <div data-testid="Copyright" className="oreus-copyright">
+  <div
+    data-testid="Copyright"
+    className={`oreus-copyright ${className || ""}`}
+    style={style}
+  >
     <div className="oreus-copyright-flavor-img">
       <img src={flavorImg} />
     </div>

@@ -11,11 +11,17 @@ const Contact: React.FC<ContactProps> = ({
   newsletter,
   coords,
   onSubscribe = () => {},
+  style,
+  className,
 }) => {
   const [email, setEmail] = React.useState("");
 
   return (
-    <div data-testid="Contact" className="oreus-contact">
+    <div
+      data-testid="Contact"
+      className={`oreus-contact ${className || ""}`}
+      style={style}
+    >
       <div className="oreus-contact-newsletter">
         <h3>{newsletter.title}</h3>
         <p>{newsletter.description}</p>

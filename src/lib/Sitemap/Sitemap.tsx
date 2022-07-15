@@ -5,8 +5,12 @@ import { SitemapProps } from "./Sitemap.types";
 
 import "./Sitemap.scss";
 
-const Sitemap: React.FC<SitemapProps> = ({ sitemap }) => (
-  <div data-testid="Sitemap" className="oreus-sitemap">
+const Sitemap: React.FC<SitemapProps> = ({ sitemap, className, style }) => (
+  <div
+    data-testid="Sitemap"
+    className={`oreus-sitemap ${className || ""}`}
+    style={style}
+  >
     {sitemap.map((category, index) => (
       <div
         className="oreus-sitemap-category"
