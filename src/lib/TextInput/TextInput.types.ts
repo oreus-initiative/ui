@@ -6,6 +6,6 @@ export interface TextInputProps {
   onBlur?: any;
   style?: any;
   className?: string;
-  autoFocus: boolean;
+  autoFocus?: boolean;
   ref?: any;
 }
