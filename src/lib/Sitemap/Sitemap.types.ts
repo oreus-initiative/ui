@@ -2,7 +2,7 @@
 export interface SitemapProps {
   sitemap: Array<{
     title: string;
-    links: [
+    items: [
       {
         title: string;
         href: string;
