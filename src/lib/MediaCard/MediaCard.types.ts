@@ -4,4 +4,5 @@ import { CardProps } from "../Card/Card.types";
 export interface MediaCardProps extends CardProps{
     image: string;
     actionLabel?: string;
+    onClick?: any;
 }
