@@ -21,7 +21,7 @@
   &.oreus-text-input-light {
     background-color: transparent;
     @include border($white);
-    color: $gray-1;
+    color: $white;
   }
   &::placeholder {
     color: $gray-3;
