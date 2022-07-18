@@ -11,6 +11,7 @@ import MediaCard from "./lib/MediaCard";
 import Navbar from "./lib/Navbar";
 import SocialLink from "./lib/SocialLink";
 import Sitemap from "./lib/Sitemap";
+import TextArea from "./lib/TextArea";
 import TextInput from "./lib/TextInput";
 import TextInvertingBox from "./lib/TextInvertingBox";
 import VideoPlayer from "./lib/VideoPlayer";
@@ -29,6 +30,7 @@ export {
   Navbar,
   SocialLink,
   Sitemap,
+  TextArea,
   TextInput,
   TextInvertingBox,
   VideoPlayer,
