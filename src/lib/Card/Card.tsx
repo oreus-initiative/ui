@@ -8,7 +8,7 @@ import "./Card.scss";
 const Card: React.FC<CardProps> = ({ title, subtitle, children, className, style }) => (
   <div
     data-testid="Card"
-    className={`oreus-card-container ${className}`}
+    className={`oreus-card-container ${className || ""}`}
     style={style}
   >
     <h2>{title}</h2>

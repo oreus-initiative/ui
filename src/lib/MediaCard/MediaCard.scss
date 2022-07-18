@@ -1,9 +1,45 @@
 // Generated with util/create-component.js
 @import "../../variables.scss";
 @import "../../typography.scss";
+@import "../../mixins.scss";
 
-.foo-bar {
+.oreus-media-card-container {
+  color: $white;
   @include font-defaults;
-
-  color: $harvey-green;
+  background-color: $white;
+  color: $gray-1;
+  padding: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    max-width: 400px;
+  }
+  font-size: 18px;
+  img {
+    margin: -33px 0 16px -33px;
+    width: calc(100% + 65px);
+  }
+  h2 {
+    text-transform: unset;
+    color: $primary;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .oreus-media-card-subtitle {
+    color: $gray-2;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .oreus-media-card-content {
+    padding-top: 16px;
+  }
+  .oreus-media-card-action-container {
+    display: flex;
+    justify-content: flex-end;
+    .oreus-btn {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
 }
