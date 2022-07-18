@@ -7,6 +7,9 @@
   color: $white;
   display: flex;
   flex-wrap: wrap;
+  strong {
+    text-transform: uppercase;
+  }
   .oreus-sitemap-category {
     &:first-child {
       padding-left: 0;
