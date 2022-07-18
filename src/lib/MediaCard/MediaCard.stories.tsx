@@ -7,7 +7,7 @@ export default {
 };
 
 export const Default = () => (
-  <div style={{ backgroundColor: "black", padding: "16px" }}>
+  <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
     <MediaCard
       image="/images/components/media-card/dominic_fournier.png"
       title="Dominic Fournier"
@@ -23,7 +23,7 @@ export const Default = () => (
 );
 
 export const WithAction = () => (
-  <div style={{ backgroundColor: "black", padding: "16px" }}>
+  <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
     <MediaCard
       image="/images/components/media-card/dominic_fournier.png"
       title="Dominic Fournier"

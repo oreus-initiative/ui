@@ -7,7 +7,7 @@ export default {
 };
 
 export const Default = () => (
-  <div style={{backgroundColor: "#302e49", padding: "10px"}}>
+  <div style={{backgroundColor: "#302e49", padding: "16px"}}>
     <Copyright
       company="Oreus S.E.N.C"
       year={new Date().getFullYear()}

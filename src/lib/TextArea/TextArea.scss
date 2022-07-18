@@ -19,9 +19,11 @@
   &.oreus-area-input-dark {
     @include border($gray-1);
     color: $gray-1;
+    &::placeholder {
+      color: $gray-2;
+    }
   }
   &::placeholder {
-    text-transform: uppercase;
     color: $gray-3;
   }
 }

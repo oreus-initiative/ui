@@ -12,7 +12,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
   name,
   label,
   value,
-  onChange,
+  onChange =() => {},
   color = "primary",
   style,
   className,

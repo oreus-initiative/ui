@@ -21,7 +21,7 @@ const coords = {
 };
 
 export const Default = () => (
-  <div style={{ backgroundColor: "#302e49", padding: "10px" }}>
+  <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
     <Contact
       newsletter={newsletter}
       coords={coords}

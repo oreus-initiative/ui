@@ -85,3 +85,36 @@ export const Loading = () => {
     />
   );
 };
+
+export const Colored = () => {
+  const [selected, setSelected] = useState(scrollOptions[0]);
+
+  return (
+    <>
+      <div div style={{ padding: "16px" }}>
+        <Dropdown
+          color="primary"
+          options={scrollOptions}
+          selected={selected}
+          onChange={setSelected}
+        />
+      </div>
+      <div div style={{ padding: "16px" }}>
+        <Dropdown
+          color="dark"
+          options={scrollOptions}
+          selected={selected}
+          onChange={setSelected}
+        />
+      </div>
+      <div div style={{ backgroundColor: "#302e49", padding: "16px" }}>
+        <Dropdown
+          color="light"
+          options={scrollOptions}
+          selected={selected}
+          onChange={setSelected}
+        />
+      </div>
+    </>
+  );
+};

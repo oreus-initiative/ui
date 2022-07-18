@@ -135,7 +135,7 @@ const sitemap = [
 ];
 
 export const WithBar = () => (
-  <div style={{backgroundColor: "#302e49", padding: "10px"}}>
+  <div style={{backgroundColor: "#302e49", padding: "16px"}}>
     <Sitemap sitemap={sitemap} />
   </div>
 );

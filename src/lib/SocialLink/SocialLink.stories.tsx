@@ -8,13 +8,13 @@ export default {
 };
 
 export const Default = () => (
-  <div style={{ backgroundColor: "#3F3D56", padding: "10px" }}>
+  <div style={{ backgroundColor: "#3F3D56", padding: "16px" }}>
     <SocialLink icon={faFacebookF} url={`https://www.facebook.com`} />
   </div>
 );
 
 export const Disabled = () => (
-  <div style={{ backgroundColor: "#3F3D56", padding: "10px" }}>
+  <div style={{ backgroundColor: "#3F3D56", padding: "16px" }}>
     <SocialLink
       icon={faFacebookF}
       url={`https://www.facebook.com`}

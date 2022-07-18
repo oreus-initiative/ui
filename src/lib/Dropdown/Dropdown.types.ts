@@ -7,5 +7,6 @@ export interface DropdownProps {
   selected?: any;
   loading?: boolean;
   disabled?: boolean;
+  color?: "primary" | "dark" | "light";
   className?: string;
 }

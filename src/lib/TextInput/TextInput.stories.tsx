@@ -11,7 +11,7 @@ export const Dark = () => (
   <TextInput color="dark" placeholder="Enter some text..." />
 );
 export const Light = () => (
-  <div style={{ backgroundColor: "black", padding: "10px" }}>
+  <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
     <TextInput color="light" placeholder="Enter some text..." />
   </div>
 );

@@ -20,7 +20,8 @@ const Dropdown: React.FC<DropdownProps> = ({
   loading,
   disabled,
   selected,
-  onChange,
+  color = "primary",
+  onChange = () => {},
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { ref, isComponentVisible, setIsComponentVisible } =
@@ -41,7 +42,9 @@ const Dropdown: React.FC<DropdownProps> = ({
   return (
     <div
       data-testid="Dropdown"
-      className={`oreus-dropdown-container ${className || ""}`}
+      className={`oreus-dropdown-container oreus-dropdown-${color} ${
+        className || ""
+      }`}
       style={style}
       ref={ref}
     >
@@ -49,6 +52,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         className="oreus-dropdown"
         disabled={disabled || loading}
         loading={loading}
+        color={color}
         icon={loading ? faCircleNotch : isOpen ? faCaretDown : faCaretUp}
         label={selected?.label || placeholder}
         onClick={() => handleDropdownToggle(!isOpen)}
