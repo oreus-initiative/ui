@@ -8,6 +8,9 @@
   @include font-defaults;
 
   &.oreus-dropdown-primary {
+    .oreus-dropdown {
+      background-color: $white;
+    }
     .oreus-dropdown-options {
       background-color: $white;
       @include border($primary);
@@ -26,6 +29,9 @@
     }
   }
   &.oreus-dropdown-dark {
+    .oreus-dropdown {
+      background-color: $white;
+    }
     .oreus-dropdown-options {
       background-color: $white;
       @include border($gray-1);
@@ -45,6 +51,9 @@
     }
   }
   &.oreus-dropdown-light {
+    .oreus-dropdown {
+      background-color: $gray-1;
+    }
     .oreus-dropdown-options {
       background-color: $white;
       @include border($white);
