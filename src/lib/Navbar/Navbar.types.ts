@@ -11,5 +11,6 @@ export interface NavbarProps {
   actionOnClick?: any;
   onRouteClicked?: any;
   phoneNumber?: string;
-  logo?: string;
+  logoWide?: string;
+  logoNarrow?: string;
 }

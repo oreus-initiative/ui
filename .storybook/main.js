@@ -3,7 +3,11 @@ const path = require("path");
 module.exports = {
   stories: ["../src/lib/**/*.stories.tsx"],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: [],
+  addons: [
+    'storybook-mobile',
+    '@storybook/addon-viewport',
+    '@storybook/addon-a11y'
+  ],
   staticDirs: ['../public'],
   webpackFinal: async (config) => {
     config.module.rules.push({

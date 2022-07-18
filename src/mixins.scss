@@ -2,9 +2,12 @@
 
 @mixin contained {
   position: relative;
-  max-width: 1160px;
-  padding: 16px;
+  max-width: 1200px;
   margin: auto;
+}
+
+.contained {
+  @include contained;
 }
 
 @mixin border($color) {

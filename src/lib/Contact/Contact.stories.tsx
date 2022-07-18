@@ -10,6 +10,7 @@ const newsletter = {
   title: "Newsletter",
   description:
     "Subscribe to our newsletter to receive the latest news and updates about our products.",
+  inputPlaceholder: "Enter your email",
 };
 
 const coords = {

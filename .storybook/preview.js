@@ -65,3 +65,103 @@
  *
  * Will add a new dropdown in your toolbar with options light and dark.
  **/
+
+// .storybook/preview.js
+
+const customViewports = {
+  iphoneSE: {
+    name: 'Iphone SE',
+    styles: {
+      width: '375px',
+      height: '667px',
+    },
+  },
+  iphoneXR: {
+    name: 'Iphone XR',
+    styles: {
+      width: '414px',
+      height: '896px',
+    },
+  },
+  iphone12Pro: {
+    name: 'Iphone 12 Pro',
+    styles: {
+      width: '390px',
+      height: '844px',
+    },
+  },
+  pixel5: {
+    name: 'Pixel 5',
+    styles: {
+      width: '393px',
+      height: '851px',
+    },
+  },
+  samsungGalaxyS8Plus: {
+    name: 'Samsung Galaxy S8 Plus',
+    styles: {
+      width: '360px',
+      height: '740px',
+    },
+  },
+  samsungGalaxyS20Ultra: {
+    name: 'Samsung Galaxy S20 Ultra',
+    styles: {
+      width: '412px',
+      height: '915px',
+    },
+  },
+  ipadAir: {
+    name: 'iPad Air',
+    styles: {
+      width: '820px',
+      height: '1180px',
+    },
+  },
+  ipadMini: {
+    name: 'iPad Mini',
+    styles: {
+      width: '768px',
+      height: '1024px',
+    },
+  },
+  surfacePro7: {
+    name: 'Surface Pro 7',
+    styles: {
+      width: '912px',
+      height: '1368px',
+    },
+  },
+  surfaceDuo: {
+    name: 'Surface Duo',
+    styles: {
+      width: '540px',
+      height: '720px',
+    },
+  },
+  samsungGalaxyFold: {
+    name: 'Samsung Galaxy Fold',
+    styles: {
+      width: '280px',
+      height: '653px',
+    },
+  },
+  samsungGalaxyA51: {
+    name: 'Samsung Galaxy A51',
+    styles: {
+      width: '412px',
+      height: '914px',
+    },
+  },
+  nestHub: {
+    name: 'NestHub',
+    styles: {
+      width: '1024px',
+      height: '600px',
+    },
+  },
+};
+
+export const parameters = {
+  viewport: { viewports: customViewports },
+};

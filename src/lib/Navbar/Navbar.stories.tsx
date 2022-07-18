@@ -1,5 +1,6 @@
 // Generated with util/create-component.js
 import React from "react";
+import BlueprintContainer from "../BlueprintContainer/BlueprintContainer";
 import Button from "../Button/Button";
 import Navbar from "./Navbar";
 
@@ -9,11 +10,11 @@ export default {
 
 const routes = [
   {
-    title: "Home",
+    title: "Accueil",
     href: "/",
   },
   {
-    title: "Projects",
+    title: "Projets",
     href: "/projects",
   },
   {
@@ -21,7 +22,7 @@ const routes = [
     href: "/services",
   },
   {
-    title: "About",
+    title: "À Propos",
     href: "/about",
   },
   {
@@ -31,15 +32,16 @@ const routes = [
 ];
 
 export const Default = () => (
-  <div style={{ minHeight: "2000px" }}>
+  <BlueprintContainer style={{ minHeight: "2000px", margin: "-16px" }}>
     <Navbar
-      logo="/vectors/logo.svg"
+      logoWide="/vectors/logo_wide.svg"
+      logoNarrow="/vectors/logo_narrow.svg"
       routes={routes}
-      actionLabel="First Contact"
+      actionLabel="Premier Contact"
       active={routes[0].href}
-      actionOnClick={() => alert("First Contact")}
+      actionOnClick={() => alert("Premier Contact")}
       onRouteClicked={(href) => alert(`Redirect to '${href}'.`)}
       phoneNumber="514-775-1234"
     />
-  </div>
+  </BlueprintContainer>
 );
