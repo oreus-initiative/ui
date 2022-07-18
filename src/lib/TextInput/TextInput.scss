@@ -17,6 +17,10 @@
     @include border($gray-1);
     color: $gray-1;
   }
+  &.oreus-text-input-light {
+    @include border($white);
+    color: $gray-1;
+  }
   &::placeholder {
     text-transform: uppercase;
     color: $gray-3;

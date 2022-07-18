@@ -8,5 +8,5 @@ export interface TextInputProps {
   className?: string;
   autoFocus?: boolean;
   ref?: any;
-  color?: "primary" | "dark";
+  color?: "primary" | "dark" | "light";
 }
