@@ -12,6 +12,7 @@ const ColorBox: React.FC<ColorBoxProps> = ({ color, style, className }) => (
     style={style}
   >
     <div
+      title={`color ${color}`}
       className="oreus-color-box-color"
       style={{ backgroundColor: color }}
     ></div>

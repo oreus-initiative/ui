@@ -11,3 +11,9 @@ export const Default = () => {
 
   return <Checkbox label="Option A" value={value} onChange={setValue} />;
 };
+
+export const Dark = () => {
+  const [value, setValue] = useState(false);
+
+  return <Checkbox label="Option A" color="dark" value={value} onChange={setValue} />;
+};

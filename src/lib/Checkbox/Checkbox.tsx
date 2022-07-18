@@ -13,10 +13,11 @@ const Checkbox: React.FC<CheckboxProps> = ({
   label,
   value,
   onChange,
+  color = "primary",
   style,
   className,
 }) => (
-  <div className={`oreus-checkbox-container ${className || ""}`} style={style}>
+  <div className={`oreus-checkbox-container oreus-checkbox-${color} ${className || ""}`} style={style}>
     <label>
       <span
         className={`oreus-checkbox-check ${

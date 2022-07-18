@@ -6,6 +6,8 @@ import { ContactProps } from "./Contact.types";
 import "./Contact.scss";
 import TextInput from "../TextInput";
 import Button from "../Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt, faLocationDot, faMapLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact: React.FC<ContactProps> = ({
   newsletter,
@@ -42,9 +44,9 @@ const Contact: React.FC<ContactProps> = ({
       </div>
       <div className="oreus-contact-coords">
         <h3>{coords.title}</h3>
-        <p>{coords.address}</p>
-        <p>{coords.phone}</p>
-        <p>{coords.email}</p>
+        <p><FontAwesomeIcon icon={faLocationDot}/>&nbsp;&nbsp;{coords.address}</p>
+        <p><FontAwesomeIcon icon={faPhone}/>&nbsp;&nbsp;{coords.phone}</p>
+        <p><FontAwesomeIcon icon={faAt}/>&nbsp;&nbsp;{coords.email}</p>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ $roboto: Roboto, Helvetica Neue, sans-serif;
 
 @mixin font-defaults {
   font-family: $roboto;
+  font-size: 18px;
 }
 
 @mixin heading {

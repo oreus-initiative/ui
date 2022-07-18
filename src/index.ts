@@ -6,6 +6,7 @@ import ColorBox from "./lib/ColorBox";
 import Contact from "./lib/Contact";
 import Copyright from "./lib/Copyright";
 import Dropdown from "./lib/Dropdown";
+import LogoShowcase from "./lib/LogoShowcase";
 import MediaCard from "./lib/MediaCard";
 import Navbar from "./lib/Navbar";
 import SocialLink from "./lib/SocialLink";
@@ -23,6 +24,7 @@ export {
   Contact,
   Copyright,
   Dropdown,
+  LogoShowcase,
   MediaCard,
   Navbar,
   SocialLink,
