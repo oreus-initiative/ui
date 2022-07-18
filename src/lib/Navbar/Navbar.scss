@@ -9,7 +9,7 @@
   top: 0;
   right: 0;
   transition: 0.2s ease-in-out background-color;
-  z-index: 99px;
+  z-index: 99;
   &.navbar-no-bg {
     background-color: transparent !important;
     background-clip: content-box;
