@@ -22,9 +22,10 @@
       align-items: stretch;
       .oreus-text-input {
         flex-grow: 8;
+        min-width: 300px;
       }
       .oreus-contact-btn {
-        flex-grow: 4;
+        text-align: center !important;
         color: $gray-1;
         &:hover {
           color: $gray-1 !important;
