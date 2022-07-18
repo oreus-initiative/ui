@@ -6,7 +6,12 @@
 .oreus-dropdown-container {
   position: relative;
   @include font-defaults;
-
+  .oreus-dropdown {
+    text-transform: unset;
+  }
+  .oreus-dropdown-options ul li .oreus-btn {
+    text-transform: unset;
+  }
   &.oreus-dropdown-primary {
     .oreus-dropdown {
       background-color: $white;

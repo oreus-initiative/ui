@@ -6,8 +6,7 @@
 .oreus-text-input {
   @include font-defaults;
   background-color: $white;
-  font-size: 16px;
-  padding: 8px 16px;
+  @include padding;
   &.oreus-text-input-primary {
     @include border($primary);
     color: $gray-1;
@@ -20,6 +19,7 @@
     }
   }
   &.oreus-text-input-light {
+    background-color: transparent;
     @include border($white);
     color: $gray-1;
   }

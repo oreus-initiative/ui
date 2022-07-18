@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ title, subtitle, children, className, style
     className={`oreus-card-container ${className || ""}`}
     style={style}
   >
-    <h2>{title}</h2>
+    <h4>{title}</h4>
     <span className="oreus-card-subtitle">{subtitle}</span>
     <div className="card-content">{children}</div>
   </div>

@@ -5,18 +5,26 @@
 
 .oreus-area-input {
   @include font-defaults;
+  @include padding;
   background-color: $white;
-  font-size: 16px;
-  min-height: 41px;
+  min-height: 54px;
   box-sizing: border-box;
+  min-width: 200px;
   max-width: 100%;
-  padding: 8px 16px;
   &.oreus-area-input-primary {
     @include border($primary);
     color: $gray-1;
   }
   &.oreus-area-input-dark {
     @include border($gray-1);
+    color: $gray-1;
+    &::placeholder {
+      color: $gray-2;
+    }
+  }
+  &.oreus-area-input-light {
+    background-color: transparent;
+    @include border($white);
     color: $gray-1;
     &::placeholder {
       color: $gray-2;

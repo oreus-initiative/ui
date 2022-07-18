@@ -8,3 +8,8 @@ export default {
 
 export const Default = () => <TextArea placeholder="Enter some text..." />;
 export const Dark = () => <TextArea color="dark" placeholder="Enter some text..." />;
+export const Light = () => (
+  <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
+    <TextArea color="light" placeholder="Enter some text..." />
+  </div>
+);

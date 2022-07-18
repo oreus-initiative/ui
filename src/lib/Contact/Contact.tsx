@@ -25,7 +25,7 @@ const Contact: React.FC<ContactProps> = ({
       style={style}
     >
       <div className="oreus-contact-newsletter">
-        <h3>{newsletter.title}</h3>
+        <h5>{newsletter.title}</h5>
         <p>{newsletter.description}</p>
         <div className="oreus-contact-newsletter-action">
           <TextInput
@@ -44,7 +44,7 @@ const Contact: React.FC<ContactProps> = ({
         </div>
       </div>
       <div className="oreus-contact-coords">
-        <h3>{coords.title}</h3>
+        <h5>{coords.title}</h5>
         <p><FontAwesomeIcon icon={faLocationDot}/>&nbsp;&nbsp;{coords.address}</p>
         <p><FontAwesomeIcon icon={faPhone}/>&nbsp;&nbsp;{coords.phone}</p>
         <p><FontAwesomeIcon icon={faAt}/>&nbsp;&nbsp;{coords.email}</p>

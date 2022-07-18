@@ -4,12 +4,39 @@ $roboto: Roboto, Helvetica Neue, sans-serif;
 
 @mixin font-defaults {
   font-family: $roboto;
+  font-size: 16px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 18px;
+  }
+}
+@mixin text-small {
+  font-size: 14px;
+  @media (min-width: $breakpoint-md) {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
   font-size: 18px;
 }
 
 @mixin heading {
   @include font-defaults;
-
   font-size: 40px;
   font-weight: bold;
 }

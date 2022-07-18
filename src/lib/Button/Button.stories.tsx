@@ -10,7 +10,7 @@ export default {
 export const Variants = () => (
   <>
     <div className="d-flex" style={{fontFamily: "Roboto"}}>
-      <h2 style={{minWidth: "120px"}}>Primary</h2>
+      <h2 style={{minWidth: "250px", color: "#302e49"}}>Primary</h2>
       <Button
         label={"Outlined (default)"}
         variant="outlined"
@@ -37,7 +37,7 @@ export const Variants = () => (
       </div>
     </div>
     <div className="d-flex" style={{backgroundColor: "#302e49", color: "white", fontFamily: "Roboto"}}>
-      <h2 style={{color: "white", minWidth: "120px"}}>Light</h2>
+      <h2 style={{color: "white", minWidth: "250px"}}>Light</h2>
       <Button
         label={"Outlined (default)"}
         variant="outlined"
@@ -68,7 +68,7 @@ export const Variants = () => (
       </div>
     </div>
     <div className="d-flex" style={{fontFamily: "Roboto"}}>
-      <h2 style={{minWidth: "120px"}}>Dark</h2>
+      <h2 style={{minWidth: "250px", color: "#302e49"}}>Dark</h2>
       <Button
         label={"Outlined (default)"}
         variant="outlined"

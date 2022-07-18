@@ -13,6 +13,13 @@ h1,h2,h3,h4,h5,h6 {
   @include contained;
 }
 
+@mixin padding() {
+  padding: 8px 16px;
+  @media (min-width: $breakpoint-md) {
+    padding: 12px 24px;
+  }
+}
+
 @mixin border($color) {
   border: solid 3px $color;
 }

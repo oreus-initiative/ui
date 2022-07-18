@@ -8,21 +8,19 @@
   @include font-defaults;
   background-color: $white;
   color: $gray-1;
-  padding: 32px;
-  font-size: 18px;
+  @include padding;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
-  h2 {
+  h4 {
     text-transform: unset;
     color: $primary;
-    font-size: 24px;
     margin-top: 0;
     margin-bottom: 0;
   }
   .oreus-card-subtitle {
     color: $gray-2;
-    font-size: 14px;
+    @include text-small;
     margin-top: 8px;
   }
   .card-content {
