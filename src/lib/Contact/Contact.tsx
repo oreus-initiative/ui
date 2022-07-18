@@ -31,6 +31,7 @@ const Contact: React.FC<ContactProps> = ({
           <TextInput
             placeholder={newsletter.inputPlaceholder}
             value={email}
+            color="light"
             onChange={(event) => setEmail(event.target.value)}
           />
           <Button
