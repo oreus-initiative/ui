@@ -3,17 +3,20 @@
 @import "../../typography.scss";
 @import "../../mixins.scss";
 
-.oreus-text-input {
+.oreus-area-input {
   @include font-defaults;
   background-color: white;
   font-size: 16px;
+  min-height: 41px;
+  box-sizing: border-box;
+  max-width: 100%;
   background-color: transparent;
   padding: 8px 16px;
-  &.oreus-text-input-primary {
+  &.oreus-area-input-primary {
     @include border($primary);
     color: $gray-1;
   }
-  &.oreus-text-input-dark {
+  &.oreus-area-input-dark {
     @include border($gray-1);
     color: $gray-1;
   }

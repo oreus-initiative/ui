@@ -1,5 +1,5 @@
 // Generated with util/create-component.js
-export interface TextInputProps {
+export interface TextAreaProps {
   placeholder?: string;
   value: string;
   onChange?: any;

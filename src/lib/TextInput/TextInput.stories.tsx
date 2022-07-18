@@ -7,3 +7,4 @@ export default {
 };
 
 export const Default = () => <TextInput placeholder="Enter some text..." />;
+export const Dark = () => <TextInput color="dark" placeholder="Enter some text..." />;
