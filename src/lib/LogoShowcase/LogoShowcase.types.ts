@@ -5,6 +5,7 @@ export interface ColorsArray {
 
 export interface ShowcaseLogo {
   img: string;
+  alt: string;
   colors: ColorsArray;
 };
 
