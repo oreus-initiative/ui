@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <div
       data-testid="Navbar"
-      className={`oreus-navbar ${alwaysShowBackground || scrollPosition <= 25 ? "navbar-no-bg" : ""} ${
+      className={`oreus-navbar ${alwaysShowBackground || scrollPosition > 25 ? "" : "navbar-no-bg"} ${
         className || ""
       }`}
       style={style}
