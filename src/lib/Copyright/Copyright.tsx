@@ -10,6 +10,7 @@ const Copyright: React.FC<CopyrightProps> = ({
   flavorImg,
   year,
   company,
+  allRightsReserved,
   className,
   style,
 }) => (
@@ -24,7 +25,7 @@ const Copyright: React.FC<CopyrightProps> = ({
     <div>
       {flavor ? <div style={{ fontWeight: "bold" }}>{flavor}</div> : null}
       <div>
-        &copy;&nbsp;{year}&nbsp;{company}. All rights reserved.
+        &copy;&nbsp;{year}&nbsp;{company}. {allRightsReserved}
       </div>
     </div>
   </div>

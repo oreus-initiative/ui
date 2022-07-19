@@ -4,6 +4,7 @@ export interface CopyrightProps {
   flavorImg: string;
   year: string | number;
   company: string;
+  allRightsReserved?: string;
   style?: any;
   className?: string;
 }

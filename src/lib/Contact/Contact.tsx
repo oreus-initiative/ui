@@ -50,18 +50,18 @@ const Contact: React.FC<ContactProps> = ({
       </div>
       <div className="oreus-contact-coords">
         <h5 style={{ color: "white" }}>{coords.title}</h5>
-        <p>
+        <a href={`https://www.google.com/maps/place/${encodeURI(coords.address)}`}>
           <FontAwesomeIcon icon={faLocationDot} />
           &nbsp;&nbsp;{coords.address}
-        </p>
-        <p>
+        </a>
+        <a href={`tel:${coords.phone}`} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faPhone} />
           &nbsp;&nbsp;{coords.phone}
-        </p>
-        <p>
+        </a>
+        <a href={`mailto:${coords.email}`} target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faAt} />
           &nbsp;&nbsp;{coords.email}
-        </p>
+        </a>
       </div>
     </div>
   );
