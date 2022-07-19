@@ -7,7 +7,12 @@ import "./Contact.scss";
 import TextInput from "../TextInput";
 import Button from "../Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt, faLocationDot, faMapLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAt,
+  faLocationDot,
+  faMapLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact: React.FC<ContactProps> = ({
   newsletter,
@@ -25,7 +30,7 @@ const Contact: React.FC<ContactProps> = ({
       style={style}
     >
       <div className="oreus-contact-newsletter">
-        <h5>{newsletter.title}</h5>
+        <h5 style={{ color: "white" }}>{newsletter.title}</h5>
         <p>{newsletter.description}</p>
         <div className="oreus-contact-newsletter-action">
           <TextInput
@@ -44,10 +49,19 @@ const Contact: React.FC<ContactProps> = ({
         </div>
       </div>
       <div className="oreus-contact-coords">
-        <h5>{coords.title}</h5>
-        <p><FontAwesomeIcon icon={faLocationDot}/>&nbsp;&nbsp;{coords.address}</p>
-        <p><FontAwesomeIcon icon={faPhone}/>&nbsp;&nbsp;{coords.phone}</p>
-        <p><FontAwesomeIcon icon={faAt}/>&nbsp;&nbsp;{coords.email}</p>
+        <h5 style={{ color: "white" }}>{coords.title}</h5>
+        <p>
+          <FontAwesomeIcon icon={faLocationDot} />
+          &nbsp;&nbsp;{coords.address}
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faPhone} />
+          &nbsp;&nbsp;{coords.phone}
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faAt} />
+          &nbsp;&nbsp;{coords.email}
+        </p>
       </div>
     </div>
   );
