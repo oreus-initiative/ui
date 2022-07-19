@@ -24,4 +24,6 @@ const logos = [
     },
 ];
 
-export const Default = () => <LogoShowcase logos={logos} />;
+export const Default = () => <div style={{backgroundColor: "#203663", padding: "16px"}}>
+  <LogoShowcase logos={logos} />
+</div>;

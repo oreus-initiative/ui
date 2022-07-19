@@ -23,6 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({
   onRouteClicked = () => {},
   logoWide,
   logoNarrow,
+  alwaysShowBackground = true,
 }) => {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -39,13 +40,13 @@ const Navbar: React.FC<NavbarProps> = ({
   });
 
   const isActiveRoute = (route: string) => {
-    return active.indexOf(route) > -1;
+    return active.localeCompare(route) === 0;
   };
 
   return (
     <div
       data-testid="Navbar"
-      className={`oreus-navbar ${scrollPosition <= 25 ? "navbar-no-bg" : ""} ${
+      className={`oreus-navbar ${alwaysShowBackground || scrollPosition <= 25 ? "navbar-no-bg" : ""} ${
         className || ""
       }`}
       style={style}

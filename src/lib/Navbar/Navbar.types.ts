@@ -13,4 +13,5 @@ export interface NavbarProps {
   phoneNumber?: string;
   logoWide?: string;
   logoNarrow?: string;
+  alwaysShowBackground?: boolean;
 }
