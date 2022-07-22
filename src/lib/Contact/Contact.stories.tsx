@@ -1,5 +1,7 @@
 // Generated with util/create-component.js
 import React from "react";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+
 import Contact from "./Contact";
 
 export default {
@@ -11,6 +13,10 @@ const newsletter = {
   description:
     "Subscribe to our newsletter to receive the latest news and updates about our products.",
   inputPlaceholder: "Enter your email",
+  buttonLabel: "Subscribe",
+  onSubscribe: (email) => {
+    alert(email);
+  },
 };
 
 const coords = {
@@ -22,10 +28,6 @@ const coords = {
 
 export const Default = () => (
   <div style={{ backgroundColor: "#302e49", padding: "16px" }}>
-    <Contact
-      newsletter={newsletter}
-      coords={coords}
-      onSubscribe={() => alert("Subscribe to newsletter")}
-    />
+    <Contact newsletter={newsletter} coords={coords} />
   </div>
 );

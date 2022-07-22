@@ -141,6 +141,7 @@ const Navbar: React.FC<NavbarProps> = ({
           </a>
           <Button
             label={actionLabel}
+            onClick={actionOnClick}
             variant="contained"
             color="light"
             className="oreus-first-contact-btn"

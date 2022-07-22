@@ -1,10 +1,15 @@
 // Generated with util/create-component.js
 export interface ContactProps {
-  newsletter: {
+  newsletter?: {
     title?: string;
     description?: string;
     inputPlaceholder?: string;
     buttonLabel?: string;
+    onSubscribe?: any;
+    errors?: {
+      required?: string;
+      validEmail?: string;
+    }
   }
   coords: {
     title?: string;
@@ -12,9 +17,8 @@ export interface ContactProps {
     phone?: string;
     email?: string;
   }
-  onSubscribe?: any;
   style?: any;
   className?: string;
 }
 
-export interface ContactNewsletter
+export interface ContactNewsletter;

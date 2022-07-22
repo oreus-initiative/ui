@@ -32,6 +32,12 @@
         }
       }
     }
+    .oreus-contact-error {
+      color: $gray-3;
+      display: block;
+      margin-top: 8px;
+      min-height: 18px;
+    }
   }
   .oreus-contact-coords {
     margin: 16px;
@@ -39,12 +45,12 @@
       margin: 16px;
       margin-left: 0;
       display: block;
-      color: $white;
+      color: $gray-4;
       text-decoration: none;
       transition: 0.2s ease-in-out transform;
       &:hover {
+        color: $white;
         transform: scale(1.05);
-        color: $gray-4;
       }
     }
   }
