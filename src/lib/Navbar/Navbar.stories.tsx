@@ -45,3 +45,18 @@ export const Default = () => (
     />
   </BlueprintContainer>
 );
+
+export const ActiveRouteNotInNav = () => (
+  <BlueprintContainer style={{ minHeight: "2000px", margin: "-16px" }}>
+    <Navbar
+      logoWide="/vectors/logo_wide.svg"
+      logoNarrow="/vectors/logo_narrow.svg"
+      routes={routes}
+      actionLabel="Premier Contact"
+      active={"some-other-route"}
+      actionOnClick={() => alert("Premier Contact")}
+      onRouteClicked={(href) => alert(`Redirect to '${href}'.`)}
+      phoneNumber="514-775-1234"
+    />
+  </BlueprintContainer>
+);

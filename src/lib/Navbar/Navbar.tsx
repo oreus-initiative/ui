@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({
   });
 
   const isActiveRoute = (route: string) => {
-    return active.localeCompare(route) === 0;
+    return active.localeCompare(route) === 0 && active.length === route.length;
   };
 
   return (
