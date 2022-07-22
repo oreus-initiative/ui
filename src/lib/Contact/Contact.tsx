@@ -102,7 +102,7 @@ const Contact: React.FC<ContactProps> = ({
               color="light"
               className="oreus-contact-btn"
               disabled={!isEmailValid || !isEmailProvided}
-              onClick={() => handleSubscribe(email)}
+              onClick={() => handleSubscribe()}
             />
           </div>
           {renderEmailErrors()}
