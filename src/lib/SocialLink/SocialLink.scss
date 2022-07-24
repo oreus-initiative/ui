@@ -4,11 +4,17 @@
 
 .oreus-social-link {
   position: relative;
-  margin: 16px;
-  height: 48px;
-  width: 48px;
-  font-size: 36px;
-  @media (min-width: 794px) {
+  margin: 12px;
+  height: 36px;
+  width: 36px;
+  font-size: 24px;
+  @media (min-width: $breakpoint-sm) {
+    margin: 32px;
+    height: 96px;
+    width: 96px;
+    font-size: 72px;
+  }
+  @media (min-width: $breakpoint-md) {
     margin: 32px;
     height: 96px;
     width: 96px;
@@ -51,9 +57,13 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 48px;
-    width: 48px;
-    @media (min-width: 794px) {
+    height: 36px;
+    width: 36px;
+    @media (min-width: $breakpoint-sm) {
+      height: 48px;
+      width: 48px;
+    }
+    @media (min-width: $breakpoint-md) {
       height: 96px;
       width: 96px;
     }
