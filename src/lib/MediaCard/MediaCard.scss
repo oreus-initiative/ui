@@ -12,6 +12,11 @@
   box-sizing: border-box;
   width: 100%;
   @media (min-width: $breakpoint-sm) {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin: unset;
     max-width: 400px;
   }
   font-size: 18px;
