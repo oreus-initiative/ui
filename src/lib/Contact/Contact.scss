@@ -9,11 +9,19 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   color: $white;
+  box-sizing: border-box;
+  h5 {
+    margin-bottom: 8px;
+  }
   .oreus-contact-newsletter {
     margin: 16px;
+    margin-top: 0;
     margin-left: 0;
-    margin-right: 100px;
-    max-width: 600px;
+    max-width: 100%;
+    @media (min-width: $breakpoint-md) {
+      margin-right: 100px;
+      max-width: 600px;
+    }
     .oreus-contact-newsletter-action {
       position: relative;
       display: flex;
@@ -22,11 +30,16 @@
       align-items: stretch;
       .oreus-text-input {
         flex-grow: 8;
-        min-width: 300px;
+        @media (min-width: $breakpoint-md) {
+          min-width: 300px;
+        }
       }
       .oreus-contact-btn {
         text-align: center !important;
         color: $gray-1;
+        @media (max-width: $breakpoint-md) {
+          width: 100%;
+        }
         &:hover {
           color: $gray-1 !important;
         }
@@ -40,7 +53,8 @@
     }
   }
   .oreus-contact-coords {
-    margin: 16px;
+    margin: 16px 0;
+    margin-top: 0;
     a {
       margin: 16px;
       margin-left: 0;
