@@ -91,7 +91,10 @@ const Navbar: React.FC<NavbarProps> = ({
               variant={isActiveRoute(route.href) ? "contained" : "text"}
               disabled={isActiveRoute(route.href)}
               color="light"
-              onClick={() => onRouteClicked(route.href)}
+              onClick={() => {
+                onRouteClicked(route.href);
+                setMobileNavOpen(!false);
+              }}
             />
           ))}
           <a
