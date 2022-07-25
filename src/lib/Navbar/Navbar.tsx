@@ -93,7 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({
               color="light"
               onClick={() => {
                 onRouteClicked(route.href);
-                setMobileNavOpen(!false);
+                setMobileNavOpen(false);
               }}
             />
           ))}
