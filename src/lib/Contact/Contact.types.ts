@@ -8,7 +8,7 @@ export interface ContactProps {
     onSubscribe?: any;
     errors?: {
       required?: string;
-      validEmail?: string;
+      valid?: string;
     }
   }
   coords: {

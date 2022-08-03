@@ -14,6 +14,10 @@ const newsletter = {
     "Subscribe to our newsletter to receive the latest news and updates about our products.",
   inputPlaceholder: "Enter your email",
   buttonLabel: "Subscribe",
+  errors: {
+    required: "Email is required",
+    valid: "Please provide a valid email",
+  },
   onSubscribe: (email) => {
     alert(email);
   },

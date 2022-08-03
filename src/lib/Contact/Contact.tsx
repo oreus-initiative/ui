@@ -45,7 +45,7 @@ const Contact: React.FC<ContactProps> = ({
     } else if (!isEmailValid) {
       return (
         <small className="oreus-contact-error">
-          {newsletter?.errors?.validEmail || "Please provide a valid email"}
+          {newsletter?.errors?.valid || "Please provide a valid email"}
         </small>
       );
     } else {
