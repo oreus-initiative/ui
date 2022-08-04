@@ -27,3 +27,7 @@ const logos = [
 export const Default = () => <div style={{backgroundColor: "#203663", padding: "16px"}}>
   <LogoShowcase logos={logos} />
 </div>;
+
+export const DirectionLeft = () => <div style={{backgroundColor: "#203663", padding: "16px"}}>
+  <LogoShowcase direction="left" logos={logos} />
+</div>;

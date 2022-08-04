@@ -12,6 +12,7 @@ const LogoShowcase: React.FC<LogoShowcaseProps> = ({
   delay = 1000,
   className,
   style,
+  direction = "right",
 }) => {
   const [activeLogo, setActiveLogo] = useState<number>(0);
 
@@ -26,7 +27,7 @@ const LogoShowcase: React.FC<LogoShowcaseProps> = ({
   return (
     <div
       data-testid="LogoShowcase"
-      className={`oreus-logo-showcase ${className || ""}`}
+      className={`oreus-logo-showcase oreus-logo-showcase-${direction} ${className || ""}`}
       style={style}
     >
       <div

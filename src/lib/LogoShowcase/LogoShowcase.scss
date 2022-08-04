@@ -4,6 +4,16 @@
 
 .oreus-logo-showcase {
   @include font-defaults;
+  &.oreus-logo-showcase-left {
+    .oreus-logo-showcase-logo {
+      .oreus-logo-showcase-logo-container {
+        order: 2;
+      }
+      .oreus-logo-showcase-logo-colors {
+        order: 1;
+      }
+    }
+  }
   .oreus-logo-showcase-logo {
     display: flex;
     justify-content: flex-start;

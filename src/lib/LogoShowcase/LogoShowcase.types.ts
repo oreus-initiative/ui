@@ -9,4 +9,5 @@ export interface LogoShowcaseProps {
     delay: number;
     style?: any;
     className?: string;
+    direction?: 'left' | 'right';
 }
