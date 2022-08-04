@@ -7,4 +7,6 @@ export interface ShowcaseLogo {
 export interface LogoShowcaseProps {
     logos: Array<ShowcaseLogo>;
     delay: number;
+    style?: any;
+    className?: string;
 }

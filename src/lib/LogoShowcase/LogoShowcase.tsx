@@ -10,6 +10,8 @@ import "./LogoShowcase.scss";
 const LogoShowcase: React.FC<LogoShowcaseProps> = ({
   logos = [],
   delay = 1000,
+  className,
+  style,
 }) => {
   const [activeLogo, setActiveLogo] = useState<number>(0);
 
@@ -22,7 +24,11 @@ const LogoShowcase: React.FC<LogoShowcaseProps> = ({
   }, delay);
 
   return (
-    <div data-testid="LogoShowcase" className="oreus-logo-showcase">
+    <div
+      data-testid="LogoShowcase"
+      className={`oreus-logo-showcase ${className || ""}`}
+      style={style}
+    >
       <div
         className="oreus-logo-showcase-logo"
         key={`${logos[activeLogo].alt}_logoshowcase`}
