@@ -2,7 +2,6 @@
 export interface SitemapProps {
   sitemap: Array<{
     title: string;
-    baseUrl?: string;
     items: [
       {
         title: string;
@@ -10,6 +9,7 @@ export interface SitemapProps {
       }
     ]
   }>;
+  baseUrl?: string;
   style?: any;
   className?: string;
 }
