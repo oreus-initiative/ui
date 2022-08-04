@@ -114,6 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({
             className="oreus-navbar-logo oreus-navbar-logo-narrow"
           />
           <img
+            onClick={onClickLogo}
             src={logoWide}
             className="oreus-navbar-logo oreus-navbar-logo-wide"
           />
