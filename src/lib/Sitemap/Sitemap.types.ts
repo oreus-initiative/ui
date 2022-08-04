@@ -2,6 +2,7 @@
 export interface SitemapProps {
   sitemap: Array<{
     title: string;
+    baseUrl?: string;
     items: [
       {
         title: string;
