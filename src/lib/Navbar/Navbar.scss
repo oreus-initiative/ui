@@ -79,6 +79,7 @@
       align-items: center;
       padding: 8px;
       .oreus-navbar-logo {
+        cursor: pointer;
         height: 50px;
         margin: 0 8px;
         transition: 0.3s ease-in-out opacity;
@@ -120,6 +121,7 @@
       align-items: center;
       height: calc(100%);
       .oreus-navbar-logo {
+        cursor: pointer;
         padding: 8px 0;
         height: 50px;
       }
