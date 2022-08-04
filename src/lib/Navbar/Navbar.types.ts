@@ -10,6 +10,7 @@ export interface NavbarProps {
   actionLabel?: string;
   actionOnClick?: any;
   onRouteClicked?: any;
+  onClickLogo?: any;
   phoneNumber?: string;
   logoWide?: string;
   logoNarrow?: string;

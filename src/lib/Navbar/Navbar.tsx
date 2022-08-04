@@ -23,6 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({
   onRouteClicked = () => {},
   logoWide,
   logoNarrow,
+  onClickLogo = () => {},
   alwaysShowBackground = true,
 }) => {
   const [isMobileNavOpen, setMobileNavOpen] = useState(false);
@@ -46,15 +47,16 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <div
       data-testid="Navbar"
-      className={`oreus-navbar ${alwaysShowBackground || scrollPosition > 25 ? "" : "navbar-no-bg"} ${
-        className || ""
-      }`}
+      className={`oreus-navbar ${
+        alwaysShowBackground || scrollPosition > 25 ? "" : "navbar-no-bg"
+      } ${className || ""}`}
       style={style}
     >
       {/* MOBILE NAVIGATION */}
       <div className="oreus-navbar-mobile">
         <div className="oreus-navbar-left">
           <img
+            onClick={onClickLogo}
             src={logoWide}
             className="oreus-navbar-logo oreus-navbar-logo-narrow"
           />
@@ -97,10 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({
               }}
             />
           ))}
-          <a
-            className="oreus-phone-number"
-            href={`tel:${phoneNumber}`}
-          >
+          <a className="oreus-phone-number" href={`tel:${phoneNumber}`}>
             <FontAwesomeIcon icon={faPhoneSquare} />
             &nbsp;&nbsp;{phoneNumber}
           </a>
@@ -110,6 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="oreus-navbar-desktop">
         <div className="oreus-navbar-left">
           <img
+            onClick={onClickLogo}
             src={logoNarrow}
             className="oreus-navbar-logo oreus-navbar-logo-narrow"
           />
