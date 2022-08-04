@@ -35,8 +35,8 @@ const Sitemap: React.FC<SitemapProps> = ({
               >
                 <a
                   href={item.href}
-                  target={isExternalLink() ? "_blank" : undefined}
-                  rel={isExternalLink() ? "noreferrer" : undefined}
+                  target={isExternalLink(item.href) ? "_blank" : undefined}
+                  rel={isExternalLink(item.href) ? "noreferrer" : undefined}
                 >
                   {item.title}
                 </a>
